@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anthony Broad-Crawford</title>
+    <description>Anthony Broad-Crawford is a big fucking deal.
+</description>
+    <link>http://blog.anthonybroadcrawford.com/</link>
+    <atom:link href="http://blog.anthonybroadcrawford.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 15 Aug 2015 21:39:46 -0500</pubDate>
+    <lastBuildDate>Sat, 15 Aug 2015 21:39:46 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>A better way to Arduino!</title>
+        <description>&lt;p&gt;I’ve been tinkering with a few &lt;a href=&quot;http://arduino.cc/&quot;&gt;Arduino&lt;/a&gt; setups for a while now, most recently their &lt;a href=&quot;http://arduino.cc/en/main/robot&quot;&gt;robotics kit&lt;/a&gt;.  Through this exploration I’ve really enjoyed getting closer to the hardware again. I find something romantic about robots and electrical engineering.&lt;/p&gt;
+
+&lt;p&gt;The only frustration I’ve had to date is the tools surrounding the Arduino space. They’ve met their goal by keeping it simple enough anyone within the artist, design, or finance worlds could become a hobbyist roboticist.  However, their goal left me wanting a more “developer” focused development environment, even when teaching my daughter everything I’m learning along the way.&lt;/p&gt;
+
+&lt;p&gt;Enter artoo.io as a tool that takes more powerful languages, syntaxes, and grammars and gives you access to many robotics kits, Arduino one of them.  I’m not much relived to know I can hack Arduino in Ruby &amp;amp;&amp;amp; Go going forward.&lt;/p&gt;
+
+&lt;p&gt;You an find my emerging code on my github page, here.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 15 Aug 2015 16:11:51 -0500</pubDate>
+        <link>http://blog.anthonybroadcrawford.com/arduino/go/rust/node/electrical-engineering/2015/08/15/a-better-way-to-arduino.html</link>
+        <guid isPermaLink="true">http://blog.anthonybroadcrawford.com/arduino/go/rust/node/electrical-engineering/2015/08/15/a-better-way-to-arduino.html</guid>
+        
+        
+        <category>arduino</category>
+        
+        <category>go</category>
+        
+        <category>rust</category>
+        
+        <category>node</category>
+        
+        <category>electrical-engineering</category>
+        
+      </item>
+    
+  </channel>
+</rss>

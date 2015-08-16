@@ -1,0 +1,12 @@
+# Site settings
+title: Anthony Broad-Crawford
+email: abc@anthonybroadcrawford.com
+description: > # this means to ignore newlines until "baseurl:"
+  A product and technology executive.  
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.anthonybroadcrawford.com" # the base hostname & protocol for your site
+twitter_username: broadcrawford
+github_username:  broadcrawford
+
+# Build settings
+markdown: kramdown
