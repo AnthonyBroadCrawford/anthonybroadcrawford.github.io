@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Making an Apple Watchkit App: API calls</title>
+  <title>Apple Watchkit Apps</title>
   <meta name="description" content="I recently built an Apple WatchKit app for my company Fooda.  The app allows ourcustomers to track their food delivery once they’ve placed an order.  Our app...">
 
   <link rel="stylesheet" href="/css/main.css">
@@ -57,7 +57,7 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Making an Apple Watchkit App: API calls</h1>
+    <h1 class="post-title">Apple Watchkit Apps</h1>
     <p class="post-meta">Aug 16, 2015</p>
   </header>
 
@@ -71,13 +71,13 @@ to display the data.</p>
 that is thoroughly documented by <a href="http://developer.apple.com">Apple</a>.  However, I discovered this is in fact not the case
 and if this is your first time building a <a href="http://developer.apple.com/watchkit/">WatchKit</a> app, it’s ultimately simple with a few gotchas.</p>
 
-<p>This post is going to be one of a few posts documenting the gotchas I encountered and comprehensive solutions to
-resolve them.</p>
+<p>Yet, despite this being a core task of almost every app, it’s easy to go astray and end up with errors.  Specifically the <code>Domain=com.apple.watchkit.errors Code=2</code> error.  This post will help you diagnose adn avoid it.</p>
 
 <h1 id="error-domaincomapplewatchkiterrors-code2">Error Domain=com.apple.watchkit.errors Code=2</h1>
-<p>If you run into any kind of trouble that’s going to make you tear your hair out, it’s this error.  Your
-<a href="http://developer.apple.com/watchkit/">WatchKit</a> app is going to receive this error if your iOS app fails to communicate with it properly.<br />
-This you’ll find out can happen for many reasons.</p>
+<p>If you run into any kind of trouble that’s going to make you pull your hair out, it’s this error.  Your
+<a href="http://developer.apple.com/watchkit/">WatchKit</a> app is going to receive this error if your iOS app fails to communicate with it properly.  Specifically, it has failed to call the <code>reply</code> closure handed to it from the <a href="http://developer.apple.com/watchkit/">WatchKit</a> app.</p>
+
+<p>This you’ll find out can happen for many reasons.</p>
 
 <ul>
   <li>Your iOS app crashed handling the <a href="http://developer.apple.com/watchkit/">WatchKit</a> request</li>
@@ -90,7 +90,7 @@ This you’ll find out can happen for many reasons.</p>
 <p>Each of these errors are easy to prevent, but utltimately not documented in any one single place.</p>
 
 <h1 id="making-a-call-from-watchkit-to-your-ios-app">Making a call from Watchkit to your iOS app</h1>
-<p>To communicate with your iOS app from your <a href="http://developer.apple.com/watchkit/">WatchKit</a> app you are going to do so through the
+<p>To communicate with your iOS app from your <a href="http://developer.apple.com/watchkit/">WatchKit</a> app, you are going to do so through the
 <code>WKInterfaceController</code>.  This function allows you to package up a request in the form of a dictionary and
 a closure that is passed to your iOS app.</p>
 
@@ -104,27 +104,70 @@ a closure that is passed to your iOS app.</p>
      <span class="p">})</span>
  <span class="p">}</span></code></pre></div>
 
-<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="lineno">1</span> <span class="k">let</span> <span class="n">request</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;request&quot;</span><span class="o">:</span><span class="s">&quot;app_data&quot;</span><span class="p">]</span>
-<span class="lineno">2</span> 
-<span class="lineno">3</span> <span class="n">WKInterfaceController</span><span class="p">.</span><span class="n">openParentApplication</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="nl">reply</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="k">in</span>
-<span class="lineno">4</span> 
-<span class="lineno">5</span> 
-<span class="lineno">6</span> <span class="p">})</span></code></pre></div>
+<p>This is the simple part, and shouldn’t cause too many issues.  However, it’s making sure you properly reply to your <a href="http://developer.apple.com/watchkit/">WatchKit</a> that will determine if you receive the <code>Domain=com.apple.watchkit.errors Code=2</code> error or not.</p>
+
+<h1 id="make-sure-your-app-can-run-in-the-background">Make sure your app can run in the background</h1>
+<p>This shouldn’t be an issue, as most apps out of the box are allowed to do this.  However, if for somereason your app is set to prevent background processing, this will result in your <code>WKInterfaceController</code> receiving the <code>Domain=com.apple.watchkit.errors Code=2</code> error.</p>
+
+<p>To verify this, in your <code>targets</code> <code>plist</code> make sure <code>Application does not run in background</code> is set to <code>NO</code>.</p>
+
+<h1 id="add-the-handlewatchkitextensionrequest-in-your-appdelegate">Add the handleWatchKitExtensionRequest in your AppDelegate</h1>
+<p>Implement the <code>handleWatchKitExtensionRequest</code> method in your <code>AppDelegate</code>.  This method handles all requests from your <a href="http://developer.apple.com/watchkit/">WatchKit</a> app.  If you haven’t implemented this method on your iOS apps AppDelegate your <a href="http://developer.apple.com/watchkit/">WatchKit</a> will receive the <code>Domain=com.apple.watchkit.errors Code=2</code> error.</p>
+
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">func</span> <span class="nf">application</span><span class="p">(</span><span class="nl">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">handleWatchKitExtensionRequest</span> <span class="nl">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">?</span><span class="p">,</span> <span class="nl">reply</span><span class="p">:</span> <span class="p">(([</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//Handle the WatchKit request here</span>
+<span class="p">}</span></code></pre></div>
+
+<h1 id="always-call-the-reply-closure">Always call the reply closure</h1>
+<p>Ultimately, the reason your <a href="http://developer.apple.com/watchkit/">WatchKit</a> app is receiving the <code>Domain=com.apple.watchkit.errors Code=2</code> error is because you failed to call the <code>reply</code> closure.  So, no matter what happens, ensure you invoke the <code>reply</code> closure.</p>
+
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">func</span> <span class="nf">application</span><span class="p">(</span><span class="nl">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">handleWatchKitExtensionRequest</span> <span class="nl">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">?</span><span class="p">,</span> <span class="nl">reply</span><span class="p">:</span> <span class="p">(([</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">reply</span><span class="p">([</span><span class="s">&quot;response&quot;</span><span class="o">:</span><span class="p">[</span><span class="s">&quot;status&quot;</span><span class="o">:</span><span class="s">&quot;success&quot;</span><span class="p">,</span> <span class="s">&quot;data&quot;</span><span class="o">:</span><span class="s">&quot;hello world&quot;</span><span class="p">]])</span>
+<span class="p">}</span></code></pre></div>
+
+<h1 id="running-in-the-background">Running in the background</h1>
+<p>If your Watch user is glancing at their watch, most likely they aren’t also looking at your iOS app.  That means your iOS app just woke up in the background, and needs to register to run in the background.  If not, iOS will most likely terminate your app before you can invoke the <code>reply</code> closure.</p>
+
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">func</span> <span class="nf">application</span><span class="p">(</span><span class="nl">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">handleWatchKitExtensionRequest</span> <span class="nl">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">?</span><span class="p">,</span> <span class="nl">reply</span><span class="p">:</span> <span class="p">(([</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">let</span> <span class="n">backgroundProcessingToken</span> <span class="o">=</span> <span class="n">application</span><span class="p">.</span><span class="n">beginBackgroundTaskWithName</span><span class="p">(</span><span class="s">&quot;backgroundApiCall&quot;</span><span class="p">,</span> <span class="nl">expirationHandler</span><span class="p">:</span> <span class="p">{</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="k">in</span>
+      <span class="n">reply</span><span class="p">([</span><span class="s">&quot;response&quot;</span><span class="o">:</span><span class="p">[</span><span class="s">&quot;status&quot;</span><span class="o">:</span><span class="s">&quot;error&quot;</span><span class="p">,</span> <span class="s">&quot;data&quot;</span><span class="o">:</span><span class="s">&quot;BACKGROUND_JOB_EXPIRED__OH_NO&quot;</span><span class="p">]])</span>
+  <span class="p">})</span>
+
+  <span class="n">reply</span><span class="p">([</span><span class="s">&quot;response&quot;</span><span class="o">:</span><span class="p">[</span><span class="s">&quot;status&quot;</span><span class="o">:</span><span class="s">&quot;success&quot;</span><span class="p">,</span> <span class="s">&quot;data&quot;</span><span class="o">:</span><span class="s">&quot;hello world&quot;</span><span class="p">]])</span>
+  <span class="n">application</span><span class="p">.</span><span class="n">endBackgroundTask</span><span class="p">(</span><span class="n">backgroundProcessingToken</span><span class="p">)</span>
+<span class="p">}</span></code></pre></div>
+
+<p>This becomes even more important if you are making an API call which can take a material amount of time.</p>
+
+<h1 id="bringing-it-all-together">Bringing it all together</h1>
+<p>Here’s an example pulling all the components together between a <a href="http://developer.apple.com/watchkit/">WatchKit</a> app and it’s corresponding iOS app.</p>
+
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kr">override</span> <span class="k">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nl">context</span><span class="p">:</span> <span class="n">AnyObject</span><span class="o">?</span><span class="p">)</span> <span class="p">{</span>
+     <span class="nb">super</span><span class="p">.</span><span class="n">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+
+     <span class="k">let</span> <span class="nl">request</span> <span class="p">:</span> <span class="p">[</span><span class="nl">NSObject</span><span class="p">:</span><span class="n">AnyObject</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;request&quot;</span><span class="o">:</span><span class="s">&quot;glance_data&quot;</span><span class="p">]</span>
+
+     <span class="n">WKInterfaceController</span><span class="p">.</span><span class="n">openParentApplication</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="nl">reply</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="k">in</span>
+       <span class="k">if</span><span class="p">(</span><span class="n">error</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">){</span>
+         <span class="c1">//Yeah, you have a response of some sorts from your iOS app.  </span>
+       <span class="p">}</span>
+     <span class="p">})</span>
+ <span class="p">}</span></code></pre></div>
+
+<p>Here’s the iOS <code>AppDelegate</code> <code>handleWatchKitExtensionRequest</code> implementation</p>
 
 <div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">func</span> <span class="nf">application</span><span class="p">(</span><span class="nl">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">handleWatchKitExtensionRequest</span> <span class="nl">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">?</span><span class="p">,</span> <span class="nl">reply</span><span class="p">:</span> <span class="p">(([</span><span class="nl">NSObject</span> <span class="p">:</span> <span class="n">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span><span class="p">)</span><span class="o">!</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">let</span> <span class="n">backgroundProcessingToken</span> <span class="o">=</span> <span class="n">application</span><span class="p">.</span><span class="n">beginBackgroundTaskWithName</span><span class="p">(</span><span class="s">&quot;backgroundApiCall&quot;</span><span class="p">,</span> <span class="nl">expirationHandler</span><span class="p">:</span> <span class="p">{</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="n">Void</span> <span class="k">in</span>
         <span class="n">reply</span><span class="p">([</span><span class="s">&quot;response&quot;</span><span class="o">:</span><span class="p">[</span><span class="s">&quot;error&quot;</span><span class="o">:</span><span class="s">&quot;SOME_ERROR_CODE_INDICATING_TIMEOUT&quot;</span><span class="p">]])</span>
     <span class="p">})</span>
 
-    <span class="n">request</span><span class="p">(.</span><span class="n">GET</span><span class="p">,</span> <span class="s">&quot;https://api.forecast.io/forecast/[INSERT DARK SKY API CODE]/37.8267,-122.423&quot;</span><span class="p">).</span><span class="n">responseJSON</span><span class="p">(</span><span class="nl">options</span><span class="p">:</span> <span class="n">NSJSONReadingOptions</span><span class="p">.</span><span class="n">AllowFragments</span><span class="p">,</span> <span class="nl">completionHandler</span><span class="p">:{</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
+
+    <span class="n">Alamofire</span><span class="p">.</span><span class="n">request</span><span class="p">(.</span><span class="n">GET</span><span class="p">,</span> <span class="s">&quot;https://api.forecast.io/forecast/[INSERT DARK SKY API CODE]/37.8267,-122.423&quot;</span><span class="p">).</span><span class="n">responseJSON</span><span class="p">(</span><span class="nl">options</span><span class="p">:</span> <span class="n">NSJSONReadingOptions</span><span class="p">.</span><span class="n">AllowFragments</span><span class="p">,</span> <span class="nl">completionHandler</span><span class="p">:{</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
         <span class="k">if</span><span class="p">(</span><span class="n">error</span> <span class="o">!=</span> <span class="nb">nil</span> <span class="o">||</span> <span class="n">data</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">){</span>
             <span class="n">reply</span><span class="p">([</span><span class="s">&quot;response&quot;</span><span class="o">:</span><span class="p">[</span><span class="s">&quot;error&quot;</span><span class="o">:</span><span class="s">&quot;SOME_ERROR_CODE_INDICATING_FAILURE&quot;</span><span class="p">]])</span>
         <span class="p">}</span>
 
-        <span class="k">if</span> <span class="k">let</span> <span class="n">json</span> <span class="o">=</span> <span class="n">data</span> <span class="kt">as</span><span class="o">?</span> <span class="bp">NSDictionary</span> <span class="p">{</span>
-            <span class="n">reply</span><span class="p">([</span><span class="s">&quot;response&quot;</span><span class="o">:</span><span class="p">[</span><span class="s">&quot;data&quot;</span><span class="o">:</span><span class="n">json</span><span class="p">]])</span>
-        <span class="p">}</span>
-
+        <span class="n">reply</span><span class="p">([</span><span class="s">&quot;response&quot;</span><span class="o">:</span><span class="p">[</span><span class="s">&quot;status&quot;</span><span class="o">:</span><span class="s">&quot;error&quot;</span><span class="p">,</span> <span class="s">&quot;data&quot;</span><span class="o">:</span><span class="n">data</span><span class="p">]])</span>
         <span class="n">application</span><span class="p">.</span><span class="n">endBackgroundTask</span><span class="p">(</span><span class="n">backgroundProcessingToken</span><span class="p">)</span>
     <span class="p">})</span>
 <span class="p">}</span></code></pre></div>
@@ -185,7 +228,7 @@ a closure that is passed to your iOS app.</p>
       </div>
 
       <div class="footer-col  footer-col-3">
-        <p class="text">A maker and a builder who believes you should never stop learning.  I'm a CTO, CPO, and CEO focused on healthcare and mobile technology.
+        <p class="text">A maker and a builder who believes you should never stop learning.
 </p>
       </div>
     </div>
