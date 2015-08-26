@@ -1,39 +1,39 @@
 ---
 layout: post
-title:  "Debugging Apple's WatchKit iOS handoff"
+title:  "Debugging WatchKit iOS handoff"
 date:   2015-08-21 21:11:51
 categories: Electrical-Engineering Apple iOS WatchKit Swift
 ---
 
-I recently built an Apple iOS [WatchKit][WatchKit] app and part of that experience
-was improving the user experience by leveraging Apple's [Handoff][Handoff] technology.
+I recently built an Apple iOS [WatchKit][WatchKit] app and part of that was improving
+the user experience by leveraging Apple's [Handoff][Handoff] technology.
 
 As seems to be the `pattern` lately with [Apple's][Apple] [WatchKit][WatchKit] documentation, this turned
-out to take a few hours than it should have.
+out to take a few hours longer than it should have.
 
 If you are trying to enable [Apple's][Apple] [Handoff][Handoff] and it isn't working, it's most
 likely because one of the three steps below wasn't completed.
 
 # Three simple steps to handoff
-In the end, it's actually quite simple and [Handoff][Handoff] comes down to three simple steps.
+In the end, it's actually quite simple and [Handoff][Handoff] comes down to a few small changes
 
-- Declaring what activities your iOS app can have "[Handed off][Handoff]" to it
+- Declaring what activities your iOS app can have "[Handed off][Handoff]"
 - Handing off from your [WatchKit][WatchKit] app to your iOS app
-- Receiving and processing the [Handed off][Handoff] from your iOS app
+- Receiving and processing the [Handed off][Handoff] in your iOS app
 
 Although this example is from [WatchKit][WatchKit] to iOS, you could do this from iOS to OSX.
 
 # Declaring activities
 Ultimately, not just "anything" can be handed off to your iOS app.  In order to get the hand off
-icon to appear on the iOS app, your iOS app must declare which `activities` it it can handle.
+icon to appear on the iOS app, your iOS app must `declare` which `activities` it can handle.
 
 To declare activities, you add the `NSUserActivityTypes` key to your apps plist file as an array,
 and then give meaningful names to the activities your app can handle.
 
 ![NSUserActivityTypes Screenshot]({{ site.url }}/assets/images/NSUserActivityTypes-info.plist.png)
 
-Keep in mind, these are just symbolic names that we will reference from the [WatchKit][WatchKit] app
-and nothing more.
+Keep in mind, these are just symbolic names that you will reference from the [WatchKit][WatchKit] app
+and nothing more.  So name them whatever makes the most sense to your app and these activities.
 
 # Handing off to your iOS app
 
@@ -53,17 +53,12 @@ override func awakeWithContext(context: AnyObject?) {
 }
 {% endhighlight %}
 
-This still won't work, as we haven't "caught" the [Handedoff][Handoff] within our iOS app, but
-this completes the `request` to [Handoff][Handoff] from the [WatchKit][WatchKit] app.
-
-
-
-However, at this point if you fire up your [WatchKit][WatchKit] app and then look
-at your iOS app's lockscreen, you'll notice your app's icon isn't present and handoff
-isn't working.
+At this point, [Handoff][Handoff] still won't work, as we haven't "caught" the
+`activity` handed to our iOS app.  However, this completes the`request` to
+[Handoff][Handoff] from the [WatchKit][WatchKit] app.
 
 # Preparing your app for iOS Handoff
-Ultimately, this comes down to a few things, but first you need to update your iOS apps `AppDelegate`.  Specifically, you will need to add the `continueUserActivity` so you can handle a "hand off".
+First you need to update your iOS app `AppDelegate`.  Specifically, you will need to add the `continueUserActivity` method.
 
 {% highlight swift %}
 func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]!) -> Void) -> Bool {
@@ -72,11 +67,12 @@ func application(application: UIApplication, continueUserActivity userActivity: 
 }
 {% endhighlight %}
 
-There are a few things in the above code snippet to notice.  
+There are a few things in the above code snippet to notice, specifically the call to `restorationHandler`.  The `restorationHandler` closure is the final step to make the [Handoff][Handoff] icon appear
+on the iPhone's lock screen.
 
 # Bringing it all together
 
-That's a trivial example, so ultimately you're most likely going to do something like
+These have been trivial examples, so ultimately you're most likely going to do something like
 the following
 
 {% highlight swift %}
@@ -98,15 +94,13 @@ override func awakeWithContext(context: AnyObject?) {
         userInfo: userInfo,
         webpageURL: nil
       )
+
+      //inform the user on your Glance UI that they need to log
+      some_func_to_display_the_login_ui_vs_the_normal_ui()
     }
   })
 }
 {% endhighlight %}
-
-
-
-
-
 
 [Apple]:      http://developer.apple.com
 [WatchKit]:   http://developer.apple.com/watchkit/

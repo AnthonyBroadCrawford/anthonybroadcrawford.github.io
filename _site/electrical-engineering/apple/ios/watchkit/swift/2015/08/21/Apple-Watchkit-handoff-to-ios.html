@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Debugging Apple's WatchKit iOS handoff</title>
-  <meta name="description" content="I recently built an Apple iOS WatchKit app and part of that experiencewas improving the user experience by leveraging Apple’s Handoff technology.">
+  <title>Debugging WatchKit iOS handoff</title>
+  <meta name="description" content="I recently built an Apple iOS WatchKit app and part of that was improvingthe user experience by leveraging Apple’s Handoff technology.">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/electrical-engineering/apple/ios/watchkit/swift/2015/08/21/Apple-Watchkit-handoff-to-ios.html">
@@ -57,42 +57,42 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Debugging Apple's WatchKit iOS handoff</h1>
+    <h1 class="post-title">Debugging WatchKit iOS handoff</h1>
     <p class="post-meta">Aug 21, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>I recently built an Apple iOS <a href="http://developer.apple.com/watchkit/">WatchKit</a> app and part of that experience
-was improving the user experience by leveraging Apple’s <a href="https://developer.apple.com/handoff/">Handoff</a> technology.</p>
+    <p>I recently built an Apple iOS <a href="http://developer.apple.com/watchkit/">WatchKit</a> app and part of that was improving
+the user experience by leveraging Apple’s <a href="https://developer.apple.com/handoff/">Handoff</a> technology.</p>
 
 <p>As seems to be the <code>pattern</code> lately with <a href="http://developer.apple.com">Apple’s</a> <a href="http://developer.apple.com/watchkit/">WatchKit</a> documentation, this turned
-out to take a few hours than it should have.</p>
+out to take a few hours longer than it should have.</p>
 
 <p>If you are trying to enable <a href="http://developer.apple.com">Apple’s</a> <a href="https://developer.apple.com/handoff/">Handoff</a> and it isn’t working, it’s most
 likely because one of the three steps below wasn’t completed.</p>
 
 <h1 id="three-simple-steps-to-handoff">Three simple steps to handoff</h1>
-<p>In the end, it’s actually quite simple and <a href="https://developer.apple.com/handoff/">Handoff</a> comes down to three simple steps.</p>
+<p>In the end, it’s actually quite simple and <a href="https://developer.apple.com/handoff/">Handoff</a> comes down to a few small changes</p>
 
 <ul>
-  <li>Declaring what activities your iOS app can have “<a href="https://developer.apple.com/handoff/">Handed off</a>” to it</li>
+  <li>Declaring what activities your iOS app can have “<a href="https://developer.apple.com/handoff/">Handed off</a>”</li>
   <li>Handing off from your <a href="http://developer.apple.com/watchkit/">WatchKit</a> app to your iOS app</li>
-  <li>Receiving and processing the <a href="https://developer.apple.com/handoff/">Handed off</a> from your iOS app</li>
+  <li>Receiving and processing the <a href="https://developer.apple.com/handoff/">Handed off</a> in your iOS app</li>
 </ul>
 
 <p>Although this example is from <a href="http://developer.apple.com/watchkit/">WatchKit</a> to iOS, you could do this from iOS to OSX.</p>
 
 <h1 id="declaring-activities">Declaring activities</h1>
 <p>Ultimately, not just “anything” can be handed off to your iOS app.  In order to get the hand off
-icon to appear on the iOS app, your iOS app must declare which <code>activities</code> it it can handle.</p>
+icon to appear on the iOS app, your iOS app must <code>declare</code> which <code>activities</code> it can handle.</p>
 
 <p>To declare activities, you add the <code>NSUserActivityTypes</code> key to your apps plist file as an array,
 and then give meaningful names to the activities your app can handle.</p>
 
 <p><img src="http://localhost:4000/assets/images/NSUserActivityTypes-info.plist.png" alt="NSUserActivityTypes Screenshot" /></p>
 
-<p>Keep in mind, these are just symbolic names that we will reference from the <a href="http://developer.apple.com/watchkit/">WatchKit</a> app
-and nothing more.</p>
+<p>Keep in mind, these are just symbolic names that you will reference from the <a href="http://developer.apple.com/watchkit/">WatchKit</a> app
+and nothing more.  So name them whatever makes the most sense to your app and these activities.</p>
 
 <h1 id="handing-off-to-your-ios-app">Handing off to your iOS app</h1>
 
@@ -110,26 +110,24 @@ app’s Glance, we are going to initiate a hand off to iOS</p>
   <span class="p">)</span>
 <span class="p">}</span></code></pre></div>
 
-<p>This still won’t work, as we haven’t “caught” the <a href="https://developer.apple.com/handoff/">Handedoff</a> within our iOS app, but
-this completes the <code>request</code> to <a href="https://developer.apple.com/handoff/">Handoff</a> from the <a href="http://developer.apple.com/watchkit/">WatchKit</a> app.</p>
-
-<p>However, at this point if you fire up your <a href="http://developer.apple.com/watchkit/">WatchKit</a> app and then look
-at your iOS app’s lockscreen, you’ll notice your app’s icon isn’t present and handoff
-isn’t working.</p>
+<p>At this point, <a href="https://developer.apple.com/handoff/">Handoff</a> still won’t work, as we haven’t “caught” the
+<code>activity</code> handed to our iOS app.  However, this completes the<code>request</code> to
+<a href="https://developer.apple.com/handoff/">Handoff</a> from the <a href="http://developer.apple.com/watchkit/">WatchKit</a> app.</p>
 
 <h1 id="preparing-your-app-for-ios-handoff">Preparing your app for iOS Handoff</h1>
-<p>Ultimately, this comes down to a few things, but first you need to update your iOS apps <code>AppDelegate</code>.  Specifically, you will need to add the <code>continueUserActivity</code> so you can handle a “hand off”.</p>
+<p>First you need to update your iOS app <code>AppDelegate</code>.  Specifically, you will need to add the <code>continueUserActivity</code> method.</p>
 
 <div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">func</span> <span class="n">application</span><span class="p">(</span><span class="nl">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">continueUserActivity</span> <span class="nl">userActivity</span><span class="p">:</span> <span class="n">NSUserActivity</span><span class="p">,</span> <span class="nl">restorationHandler</span><span class="p">:</span> <span class="p">([</span><span class="n">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Bool</span> <span class="p">{</span>
     <span class="n">restorationHandler</span><span class="p">([</span><span class="nb">self</span><span class="p">.</span><span class="n">window</span><span class="o">!</span><span class="p">.</span><span class="n">rootViewController</span><span class="o">!</span><span class="p">])</span>
     <span class="k">return</span> <span class="nb">true</span>
 <span class="p">}</span></code></pre></div>
 
-<p>There are a few things in the above code snippet to notice.</p>
+<p>There are a few things in the above code snippet to notice, specifically the call to <code>restorationHandler</code>.  The <code>restorationHandler</code> closure is the final step to make the <a href="https://developer.apple.com/handoff/">Handoff</a> icon appear
+on the iPhone’s lock screen.</p>
 
 <h1 id="bringing-it-all-together">Bringing it all together</h1>
 
-<p>That’s a trivial example, so ultimately you’re most likely going to do something like
+<p>These have been trivial examples, so ultimately you’re most likely going to do something like
 the following</p>
 
 <div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kr">override</span> <span class="k">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nl">context</span><span class="p">:</span> <span class="n">AnyObject</span><span class="o">?</span><span class="p">)</span> <span class="p">{</span>
@@ -150,6 +148,9 @@ the following</p>
         <span class="nl">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">,</span>
         <span class="nl">webpageURL</span><span class="p">:</span> <span class="nb">nil</span>
       <span class="p">)</span>
+
+      <span class="c1">//inform the user on your Glance UI that they need to log</span>
+      <span class="n">some_func_to_display_the_login_ui_vs_the_normal_ui</span><span class="p">()</span>
     <span class="p">}</span>
   <span class="p">})</span>
 <span class="p">}</span></code></pre></div>
