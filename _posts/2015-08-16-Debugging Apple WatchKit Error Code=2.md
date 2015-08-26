@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Debuging Apple WatchKit 'Error Code=2'"
+title:  "Debugging Apple WatchKit 'Error Code=2'"
 date:   2015-08-16 21:11:51
 categories: WatchKit iOS Apple Swift API
 tags: WatchKit iOS Apple Swift API

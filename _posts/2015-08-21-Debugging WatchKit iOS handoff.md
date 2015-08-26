@@ -30,7 +30,7 @@ icon to appear on the iOS app, your iOS app must `declare` which `activities` it
 To declare activities, you add the `NSUserActivityTypes` key to your apps plist file as an array,
 and then give meaningful names to the activities your app can handle.
 
-![NSUserActivityTypes Screenshot]({{ site.url }}/assets/images/NSUserActivityTypes-info.plist.png)
+![NSUserActivityTypes Screenshot]({{ site.url }}/assets/images/Debugging-WatchKit-iOS-handoff/NSUserActivityTypes-info.plist.png)
 
 Keep in mind, these are just symbolic names that you will reference from the [WatchKit][WatchKit] app
 and nothing more.  So name them whatever makes the most sense to your app and these activities.
