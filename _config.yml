@@ -4,7 +4,7 @@ email: abc@anthonybroadcrawford.com
 description: > # this means to ignore newlines until "baseurl:"
   A maker and a builder who believes you should never stop learning.  I've been a CTO, CPO, & CEO in the mobile & healthcare spaces.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blog.anthonybroadcrawford.com" # the base hostname & protocol for your site
+url: "http://localhost:4000" # the base hostname & protocol for your site
 twitter_username: broadcrawford
 github_username:  broadcrawford
 
