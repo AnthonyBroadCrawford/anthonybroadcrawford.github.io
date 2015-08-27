@@ -2,7 +2,7 @@
 layout: post
 title:  "Building an Arduino robot - Update"
 date:   2015-08-26 21:11:51
-categories: Electrical-Engineering Apple iOS WatchKit Swift
+categories: Arduino Robotics Microbot
 ---
 
 It's been a few months since I purchased the [Arduino][Arduino] [Parallax robot kit][Parallax robot kit].  It's a mix of hardware and software with a "following the bouncing ball"tutorial on

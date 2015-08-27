@@ -3,7 +3,7 @@ layout: post
 title:  "Debugging Apple WatchKit 'Error Code=2'"
 date:   2015-08-16 21:11:51
 categories: WatchKit iOS Apple Swift API
-tags: WatchKit iOS Apple Swift API
+tags: WatchKit iOS Apple Swift
 ---
 
 I recently built an Apple [WatchKit][WatchKit] app for my company [Fooda][Fooda].  The app allows our

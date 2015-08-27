@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>A better way to Arduino!</title>
-  <meta name="description" content="I’ve been tinkering with a few Arduino setups for a while now, most recently their robotics kit.  Through this exploration I’ve really enjoyed getting closer...">
+  <title>Building an Arduino robot - Update</title>
+  <meta name="description" content="It’s been a few months since I purchased the Arduino Parallax robot kit.  It’s a mix of hardware and software with a “following the bouncing ball”tutorial on...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/arduino/go/rust/node/electrical-engineering/2015/08/15/a-better-way-to-arduino.html">
+  <link rel="canonical" href="http://localhost:4000/arduino/robotics/microbot/2015/08/26/Building-an-Arduino-Robot-Update.html">
   <link rel="alternate" type="application/rss+xml" title="Anthony Broad-Crawford" href="http://localhost:4000/feed.xml" />
   <link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/images/favicon.png">
 </head>
@@ -58,18 +58,39 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">A better way to Arduino!</h1>
-    <p class="post-meta">Aug 15, 2015</p>
+    <h1 class="post-title">Building an Arduino robot - Update</h1>
+    <p class="post-meta">Aug 26, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>I’ve been tinkering with a few <a href="http://arduino.cc/">Arduino</a> setups for a while now, most recently their <a href="http://arduino.cc/en/main/robot">robotics kit</a>.  Through this exploration I’ve really enjoyed getting closer to the hardware again. I find something romantic about robots and electrical engineering.</p>
+    <p>It’s been a few months since I purchased the <a href="https://www.arduino.cc/">Arduino</a> <a href="http://www.adafruit.com/product/749">Parallax robot kit</a>.  It’s a mix of hardware and software with a “following the bouncing ball”tutorial on
+how to bring the robot to life.</p>
 
-<p>The only frustration I’ve had to date is the tools surrounding the Arduino space. They’ve met their goal by keeping it simple enough anyone within the artist, design, or finance worlds could become a hobbyist roboticist.  However, their goal left me wanting a more “developer” focused development environment, even when teaching my daughter everything I’m learning along the way.</p>
+<p>The <code>robot</code> is simple.  It’s a three wheeled single axle chassis with “collision detectors”
+mounted on the front to help it change directions when it comes in contact with a
+stationary object.  Basically a Rumba without a vacuum, ergo value.</p>
 
-<p>Enter artoo.io as a tool that takes more powerful languages, syntaxes, and grammars and gives you access to many robotics kits, Arduino one of them.  I’m not much relived to know I can hack Arduino in Ruby &amp;&amp; Go going forward.</p>
+<p>I’ve always loved robots and electronics as a kid.  Loved it even more in college
+when I had to take two years worth of electrical engineering.  However, I never
+got the opportunity to get my hands dirty physically building something electronic.  The <a href="https://www.arduino.cc/">Arduino</a> <a href="http://www.adafruit.com/product/749">Parallax robot kit</a> has scratched that itch.</p>
 
-<p>You an find my emerging code on my github page, here.</p>
+<p>I’m guessing I’m about 2/3 of the way through the initial build out, but my observations thus far</p>
+
+<ul>
+  <li>I love the “shield” concept from Arduino</li>
+  <li>The Parallax BOE (Board of Education) shield is awesome</li>
+  <li>The “pseudo” <a href="https://www.arduino.cc/en/Reference/HomePage">C code</a> from <a href="https://www.arduino.cc/">Arduino</a> isn’t bad, but it’s not great</li>
+  <li>My daughters LOVE working on this robot.  They’ve named her Eve.</li>
+</ul>
+
+<p>I look forward to wrapping this up in the next few weekends and then starting my combat drone from
+competitive racing.</p>
+
+<h1 id="the-progress">The progress</h1>
+<p>It’s still early in the process, but the chassis, peziohertz speaker, and the software are all functioning.<br />
+The two Servo’s are calibrated and running.</p>
+
+<p><img src="/assets/images/building-an-arduino-robot-update/arduino-parallax-robot-microbot.jpg" alt="" /></p>
 
 
   </article>

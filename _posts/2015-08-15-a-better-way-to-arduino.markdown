@@ -2,7 +2,7 @@
 layout: post
 title:  "A better way to Arduino!"
 date:   2015-08-15 21:11:51
-categories: Arduino Go Rust Node Electrical-Engineering
+categories: Arduino Robotics Microbot Go Rust Node 
 ---
 I’ve been tinkering with a few [Arduino][Arduino] setups for a while now, most recently their [robotics kit][robotics kit].  Through this exploration I’ve really enjoyed getting closer to the hardware again. I find something romantic about robots and electrical engineering.
 
