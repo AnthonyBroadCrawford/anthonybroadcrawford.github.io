@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Buidling an Arduino robot"
+title:  "Building an Arduino robot - Update"
 date:   2015-08-26 21:11:51
 categories: Electrical-Engineering Apple iOS WatchKit Swift
 ---
@@ -8,7 +8,7 @@ categories: Electrical-Engineering Apple iOS WatchKit Swift
 It's been a few months since I purchased the [Arduino][Arduino] [Parallax robot kit][Parallax robot kit].  It's a mix of hardware and software with a "following the bouncing ball"tutorial on
 how to bring the robot to life.
 
-The `robot` is simple.  It's a three wheeled single axle robot with "collision detectors"
+The `robot` is simple.  It's a three wheeled single axle chassis with "collision detectors"
 mounted on the front to help it change directions when it comes in contact with a
 stationary object.  Basically a Rumba without a vacuum, ergo value.
 
@@ -25,6 +25,12 @@ I'm guessing I'm about 2/3 of the way through the initial build out, but my obse
 
 I look forward to wrapping this up in the next few weekends and then starting my combat drone from
 competitive racing.
+
+# The progress
+It's still early in the process, but the chassis, peziohertz speaker, and the software are all functioning.  
+The two Servo's are calibrated and running.
+
+![]({{ site.rul }}/assets/images/building-an-arduino-robot-update/arduino-parallax-robot-microbot.jpg)
 
 [Parallax robot kit]:   http://www.adafruit.com/product/749
 [Arduino]:              https://www.arduino.cc/

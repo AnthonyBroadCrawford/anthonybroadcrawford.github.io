@@ -6,16 +6,16 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Aug 2015 07:35:35 -0500</pubDate>
-    <lastBuildDate>Thu, 27 Aug 2015 07:35:35 -0500</lastBuildDate>
+    <pubDate>Thu, 27 Aug 2015 09:17:12 -0500</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2015 09:17:12 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>Buidling an Arduino robot</title>
+        <title>Building an Arduino robot - Update</title>
         <description>&lt;p&gt;It’s been a few months since I purchased the &lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; &lt;a href=&quot;http://www.adafruit.com/product/749&quot;&gt;Parallax robot kit&lt;/a&gt;.  It’s a mix of hardware and software with a “following the bouncing ball”tutorial on
 how to bring the robot to life.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code&gt;robot&lt;/code&gt; is simple.  It’s a three wheeled single axle robot with “collision detectors”
+&lt;p&gt;The &lt;code&gt;robot&lt;/code&gt; is simple.  It’s a three wheeled single axle chassis with “collision detectors”
 mounted on the front to help it change directions when it comes in contact with a
 stationary object.  Basically a Rumba without a vacuum, ergo value.&lt;/p&gt;
 
@@ -34,6 +34,12 @@ got the opportunity to get my hands dirty physically building something electron
 
 &lt;p&gt;I look forward to wrapping this up in the next few weekends and then starting my combat drone from
 competitive racing.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-progress&quot;&gt;The progress&lt;/h1&gt;
+&lt;p&gt;It’s still early in the process, but the chassis, peziohertz speaker, and the software are all functioning.&lt;br /&gt;
+The two Servo’s are calibrated and running.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/building-an-arduino-robot-update/arduino-parallax-robot-microbot.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 26 Aug 2015 16:11:51 -0500</pubDate>
