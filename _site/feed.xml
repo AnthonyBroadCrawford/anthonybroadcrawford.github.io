@@ -6,9 +6,52 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Aug 2015 09:29:52 -0500</pubDate>
-    <lastBuildDate>Thu, 27 Aug 2015 09:29:52 -0500</lastBuildDate>
+    <pubDate>Thu, 27 Aug 2015 16:33:20 -0500</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2015 16:33:20 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Calling Rust from Ruby</title>
+        <description>&lt;p&gt;I’ve falling in love with &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half.  I like it
+for a lot of reasons, but I’ve recently been thinking through ways to introduce
+it to the team and the technology portfolio at &lt;a href=&quot;http://www.fooda.com&quot;&gt;Fooda&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One idea we had, was move some of our computational intensive tasks to &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;
+given that is one of it’s “sweet spots”.  However, this left us wondering on how exactly
+to do that.  Specifically, how do we call &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; from within Ruby.&lt;/p&gt;
+
+&lt;p&gt;As it turns out, it’s actually fairly easy so long as you understand&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rust&lt;/li&gt;
+  &lt;li&gt;C (the runtime language of Ruby)&lt;/li&gt;
+  &lt;li&gt;FFI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and a few lines of code to begin calling Rust from within your Ruby code.&lt;/p&gt;
+
+&lt;h1 id=&quot;preparing-rust-to-be-callable-from-ruby&quot;&gt;Preparing Rust to be “callable” from Ruby&lt;/h1&gt;
+&lt;p&gt;Without going to deep, you’ll need to do a few things to make your code available to C.  looking at
+the code snippet below, you’ll see a couple things different from the typical &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; function.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;No mangle&lt;/code&gt;  This tells the &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; compiler to keep the function name as is post compilation&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;extern &quot;C&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/e3e99f733add2830f89a.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Aug 2015 16:11:51 -0500</pubDate>
+        <link>http://localhost:4000/rust/ruby/2015/08/27/Calling-Rust-From-Ruby.html</link>
+        <guid isPermaLink="true">http://localhost:4000/rust/ruby/2015/08/27/Calling-Rust-From-Ruby.html</guid>
+        
+        
+        <category>rust</category>
+        
+        <category>ruby</category>
+        
+      </item>
     
       <item>
         <title>Building an Arduino robot - Update</title>
