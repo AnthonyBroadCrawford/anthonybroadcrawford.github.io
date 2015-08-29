@@ -6,41 +6,45 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Aug 2015 15:16:12 -0500</pubDate>
-    <lastBuildDate>Fri, 28 Aug 2015 15:16:12 -0500</lastBuildDate>
+    <pubDate>Fri, 28 Aug 2015 23:02:18 -0500</pubDate>
+    <lastBuildDate>Fri, 28 Aug 2015 23:02:18 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Calling Rust from Ruby</title>
         <description>&lt;p&gt;I’ve falling in love with &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half.  I like it
-for a lot of reasons, but I’ve recently been thinking through ways to introduce
-it to the team and the technology portfolio at &lt;a href=&quot;http://www.fooda.com&quot;&gt;Fooda&lt;/a&gt;.&lt;/p&gt;
+for a lot of reasons, a few being the compiler, seperation of noun/verb,
+and it’s deeply integrated testing.   However, recently been thinking through ways
+to introduce it to the team and the technology portfolio at &lt;a href=&quot;http://www.fooda.com&quot;&gt;Fooda&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;One idea we had, was move some of our computational intensive tasks to &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;
-given that is one of it’s “sweet spots”.  However, this left us wondering on how exactly
-to do that.  Specifically, how do we call &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; from within Ruby.&lt;/p&gt;
+given that is one of it’s “sweet spots” as a technology.  However, this left us wondering
+how exactly would we mix it in with Ruby.  Specifically, how do we call &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;
+from within Ruby.&lt;/p&gt;
 
-&lt;p&gt;As it turns out, it’s actually fairly easy so long as you understand&lt;/p&gt;
+&lt;p&gt;As it turns out, it’s actually fairly easy to call &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; from within Ruby
+so long as you understand a few simple things, namely&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Rust&lt;/li&gt;
-  &lt;li&gt;C (the runtime language of Ruby)&lt;/li&gt;
+  &lt;li&gt;C and ABI&lt;/li&gt;
   &lt;li&gt;FFI&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;and a few lines of code to begin calling Rust from within your Ruby code.&lt;/p&gt;
+&lt;p&gt;With those, and a few lines of code to begin calling Rust from within your Ruby code.&lt;/p&gt;
 
 &lt;h1 id=&quot;preparing-rust-to-be-callable-from-ruby&quot;&gt;Preparing Rust to be “callable” from Ruby&lt;/h1&gt;
-&lt;p&gt;Ultimately, you don’t need to do a whole lot to make your code available to C.  In fact,
-here’s a simple &lt;code&gt;hello world&lt;/code&gt; example.&lt;/p&gt;
+&lt;p&gt;Ultimately, you don’t need to do a whole lot to make your &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; code available to C.&lt;br /&gt;
+In fact, here’s a simple &lt;code&gt;hello world&lt;/code&gt; example.&lt;/p&gt;
 
 &lt;p&gt;true&lt;script src=&quot;https://gist.github.com/e3e99f733add2830f89a.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
 
-&lt;p&gt;The code snippet above, you’ll see a couple things different from the typical &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; function.&lt;/p&gt;
+&lt;p&gt;With the code snippet above, you’ll see a couple things different from the typical
+&lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; function.  So lets break it down …&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;#[no_mangle]&lt;/code&gt;  This tells the &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; compiler to make this a global function and don’t
-mangle it with an internal name&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;#[no_mangle]&lt;/code&gt;  This tells the &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; compiler to expose this a global function
+and don’t mangle it with an internal name&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;extern &quot;C&quot;&lt;/code&gt; This exposes the function as if it was a &lt;code&gt;C&lt;/code&gt; function via the &lt;code&gt;C ABI&lt;/code&gt;&lt;/li&gt;
   &lt;li&gt;&lt;code&gt;*const libc::c_char&lt;/code&gt; Our function returns a &lt;code&gt;C&lt;/code&gt; “string”&lt;/li&gt;
 &lt;/ul&gt;
@@ -48,9 +52,9 @@ mangle it with an internal name&lt;/li&gt;
 &lt;p&gt;Outside that, our function is a regular &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; function that does it’s thing.&lt;/p&gt;
 
 &lt;h1 id=&quot;compile-in-a-slightly-different-way&quot;&gt;Compile in a slightly different way&lt;/h1&gt;
-&lt;p&gt;Now that the source code is ready to be exposed, we need to ensure our binary is compiled
-in a manner Ruby can accept, specifically a dynamic library.  You can do this two ways, below
-I’m doing it through Cargo and the &lt;code&gt;toml&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Now that the &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; code is exposed for external consumption, we need to ensure
+our binary is compiled in a manner Ruby can accept, specifically a dynamic library.&lt;br /&gt;
+You can do this two ways, below I’m doing it through Cargo and a &lt;code&gt;toml&lt;/code&gt; file.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;library&amp;quot;&lt;/span&gt;
@@ -62,6 +66,9 @@ I’m doing it through Cargo and the &lt;code&gt;toml&lt;/code&gt; file.&lt;/p&g
 
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;libc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;0.1.10&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;When you execute &lt;code&gt;Cargo build&lt;/code&gt; you will now have a dynamic library &lt;code&gt;.dylib&lt;/code&gt; in your
+targets folder.&lt;/p&gt;
 
 &lt;h1 id=&quot;including-your-rust-library-in-ruby&quot;&gt;Including your Rust library in Ruby&lt;/h1&gt;
 &lt;p&gt;If there’s an icky part to this whole process, this is it right here.  You’ll need a one-to-one
@@ -82,6 +89,26 @@ mapping of the functionality you expose in your &lt;a href=&quot;https://www.rus
 included below.&lt;/p&gt;
 
 &lt;h1 id=&quot;test-drive-in-irb&quot;&gt;Test drive in IRB&lt;/h1&gt;
+&lt;p&gt;At this point you are able to take it for a test drive in irb.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;ABC-194:rust-library anthony&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;Cargo build
+   Compiling libc v0.1.10
+   Compiling library v0.1.0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;file:///Users/anthony/example_rust_called_from_ruby/rust-library&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ABC-194:rust-library anthony&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ..
+ABC-194:example_rust_called_from_ruby anthony&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ls
+.            ..           .git         ruby-library rust-library
+ABC-194:example_rust_called_from_ruby anthony&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;ruby-library/
+ABC-194:ruby-library anthony&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;ls
+.              ..             ruby-client.rb
+ABC-194:ruby-library anthony&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;irb
+2.0.0-p247 :001 &amp;gt; require &lt;span class=&quot;s2&quot;&gt;&amp;quot;./ruby-client&amp;quot;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+2.0.0-p247 :002 &amp;gt; Rust::hello_world
+ &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;hello world&amp;quot;&lt;/span&gt;
+2.0.0-p247 :003 &amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s it.  I was incredibly surprised at how easy it was.  The only thing I don’t like,
+is maintaining that one-to-one mapping in via &lt;code&gt;ffi&lt;/code&gt; in Ruby.  A small price to pay, I guess.&lt;/p&gt;
 
 &lt;h1 id=&quot;complete-working-example&quot;&gt;Complete working example&lt;/h1&gt;
 &lt;p&gt;I’ve put together a complete working example that will allow you from irb to call into

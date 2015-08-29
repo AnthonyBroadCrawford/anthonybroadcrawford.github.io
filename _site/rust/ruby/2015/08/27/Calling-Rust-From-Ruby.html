@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Calling Rust from Ruby</title>
-  <meta name="description" content="I’ve falling in love with Rust over the last year and a half.  I like itfor a lot of reasons, but I’ve recently been thinking through ways to introduceit to ...">
+  <meta name="description" content="I’ve falling in love with Rust over the last year and a half.  I like itfor a lot of reasons, a few being the compiler, seperation of noun/verb,and it’s deep...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://localhost:4000/rust/ruby/2015/08/27/Calling-Rust-From-Ruby.html">
@@ -64,34 +64,38 @@
 
   <article class="post-content">
     <p>I’ve falling in love with <a href="https://www.rust-lang.org">Rust</a> over the last year and a half.  I like it
-for a lot of reasons, but I’ve recently been thinking through ways to introduce
-it to the team and the technology portfolio at <a href="http://www.fooda.com">Fooda</a>.</p>
+for a lot of reasons, a few being the compiler, seperation of noun/verb,
+and it’s deeply integrated testing.   However, recently been thinking through ways
+to introduce it to the team and the technology portfolio at <a href="http://www.fooda.com">Fooda</a>.</p>
 
 <p>One idea we had, was move some of our computational intensive tasks to <a href="https://www.rust-lang.org">Rust</a>
-given that is one of it’s “sweet spots”.  However, this left us wondering on how exactly
-to do that.  Specifically, how do we call <a href="https://www.rust-lang.org">Rust</a> from within Ruby.</p>
+given that is one of it’s “sweet spots” as a technology.  However, this left us wondering
+how exactly would we mix it in with Ruby.  Specifically, how do we call <a href="https://www.rust-lang.org">Rust</a>
+from within Ruby.</p>
 
-<p>As it turns out, it’s actually fairly easy so long as you understand</p>
+<p>As it turns out, it’s actually fairly easy to call <a href="https://www.rust-lang.org">Rust</a> from within Ruby
+so long as you understand a few simple things, namely</p>
 
 <ul>
   <li>Rust</li>
-  <li>C (the runtime language of Ruby)</li>
+  <li>C and ABI</li>
   <li>FFI</li>
 </ul>
 
-<p>and a few lines of code to begin calling Rust from within your Ruby code.</p>
+<p>With those, and a few lines of code to begin calling Rust from within your Ruby code.</p>
 
 <h1 id="preparing-rust-to-be-callable-from-ruby">Preparing Rust to be “callable” from Ruby</h1>
-<p>Ultimately, you don’t need to do a whole lot to make your code available to C.  In fact,
-here’s a simple <code>hello world</code> example.</p>
+<p>Ultimately, you don’t need to do a whole lot to make your <a href="https://www.rust-lang.org">Rust</a> code available to C.<br />
+In fact, here’s a simple <code>hello world</code> example.</p>
 
 <p>true<script src="https://gist.github.com/e3e99f733add2830f89a.js"> </script></p>
 
-<p>The code snippet above, you’ll see a couple things different from the typical <a href="https://www.rust-lang.org">Rust</a> function.</p>
+<p>With the code snippet above, you’ll see a couple things different from the typical
+<a href="https://www.rust-lang.org">Rust</a> function.  So lets break it down …</p>
 
 <ul>
-  <li><code>#[no_mangle]</code>  This tells the <a href="https://www.rust-lang.org">Rust</a> compiler to make this a global function and don’t
-mangle it with an internal name</li>
+  <li><code>#[no_mangle]</code>  This tells the <a href="https://www.rust-lang.org">Rust</a> compiler to expose this a global function
+and don’t mangle it with an internal name</li>
   <li><code>extern "C"</code> This exposes the function as if it was a <code>C</code> function via the <code>C ABI</code></li>
   <li><code>*const libc::c_char</code> Our function returns a <code>C</code> “string”</li>
 </ul>
@@ -99,9 +103,9 @@ mangle it with an internal name</li>
 <p>Outside that, our function is a regular <a href="https://www.rust-lang.org">Rust</a> function that does it’s thing.</p>
 
 <h1 id="compile-in-a-slightly-different-way">Compile in a slightly different way</h1>
-<p>Now that the source code is ready to be exposed, we need to ensure our binary is compiled
-in a manner Ruby can accept, specifically a dynamic library.  You can do this two ways, below
-I’m doing it through Cargo and the <code>toml</code> file.</p>
+<p>Now that the <a href="https://www.rust-lang.org">Rust</a> code is exposed for external consumption, we need to ensure
+our binary is compiled in a manner Ruby can accept, specifically a dynamic library.<br />
+You can do this two ways, below I’m doing it through Cargo and a <code>toml</code> file.</p>
 
 <div class="highlight"><pre><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="n">package</span><span class="p">]</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;library&quot;</span>
@@ -113,6 +117,9 @@ I’m doing it through Cargo and the <code>toml</code> file.</p>
 
 <span class="p">[</span><span class="n">dependencies</span><span class="p">]</span>
 <span class="n">libc</span> <span class="o">=</span> <span class="s">&quot;0.1.10&quot;</span></code></pre></div>
+
+<p>When you execute <code>Cargo build</code> you will now have a dynamic library <code>.dylib</code> in your
+targets folder.</p>
 
 <h1 id="including-your-rust-library-in-ruby">Including your Rust library in Ruby</h1>
 <p>If there’s an icky part to this whole process, this is it right here.  You’ll need a one-to-one
@@ -133,6 +140,26 @@ mapping of the functionality you expose in your <a href="https://www.rust-lang.o
 included below.</p>
 
 <h1 id="test-drive-in-irb">Test drive in IRB</h1>
+<p>At this point you are able to take it for a test drive in irb.</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">ABC-194:rust-library anthony<span class="nv">$ </span>Cargo build
+   Compiling libc v0.1.10
+   Compiling library v0.1.0 <span class="o">(</span>file:///Users/anthony/example_rust_called_from_ruby/rust-library<span class="o">)</span>
+ABC-194:rust-library anthony<span class="nv">$ </span><span class="nb">cd</span> ..
+ABC-194:example_rust_called_from_ruby anthony<span class="nv">$ </span>ls
+.            ..           .git         ruby-library rust-library
+ABC-194:example_rust_called_from_ruby anthony<span class="nv">$ </span><span class="nb">cd </span>ruby-library/
+ABC-194:ruby-library anthony<span class="nv">$ </span>ls
+.              ..             ruby-client.rb
+ABC-194:ruby-library anthony<span class="nv">$ </span>irb
+2.0.0-p247 :001 &gt; require <span class="s2">&quot;./ruby-client&quot;</span>
+ <span class="o">=</span>&gt; <span class="nb">true</span>
+2.0.0-p247 :002 &gt; Rust::hello_world
+ <span class="o">=</span>&gt; <span class="s2">&quot;hello world&quot;</span>
+2.0.0-p247 :003 &gt;</code></pre></div>
+
+<p>That’s it.  I was incredibly surprised at how easy it was.  The only thing I don’t like,
+is maintaining that one-to-one mapping in via <code>ffi</code> in Ruby.  A small price to pay, I guess.</p>
 
 <h1 id="complete-working-example">Complete working example</h1>
 <p>I’ve put together a complete working example that will allow you from irb to call into
