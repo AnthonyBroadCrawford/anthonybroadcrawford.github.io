@@ -90,7 +90,7 @@ In fact, here’s a simple <code>hello world</code> example.</p>
 
 <p>true<script src="https://gist.github.com/e3e99f733add2830f89a.js"> </script></p>
 
-<p>With the code snippet above, you’ll see a couple things different from the typical
+<p>With the code snippet above, you’ll see a couple things different from your typical
 <a href="https://www.rust-lang.org">Rust</a> function.  So lets break it down …</p>
 
 <ul>
@@ -103,9 +103,9 @@ and don’t mangle it with an internal name</li>
 <p>Outside that, our function is a regular <a href="https://www.rust-lang.org">Rust</a> function that does it’s thing.</p>
 
 <h1 id="compile-in-a-slightly-different-way">Compile in a slightly different way</h1>
-<p>Now that the <a href="https://www.rust-lang.org">Rust</a> code is exposed for external consumption, we need to ensure
-our binary is compiled in a manner Ruby can accept, specifically a dynamic library.<br />
-You can do this two ways, below I’m doing it through Cargo and a <code>toml</code> file.</p>
+<p>Now that your <a href="https://www.rust-lang.org">Rust</a> code is exposed prepared properly, we need to ensure
+we compile in a manner Ruby can accept, specifically a dynamic library. You can do this two ways, the command line or a Cargo toml file.  I’m doing it
+through Cargo and a <code>toml</code> file below</p>
 
 <div class="highlight"><pre><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="n">package</span><span class="p">]</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;library&quot;</span>

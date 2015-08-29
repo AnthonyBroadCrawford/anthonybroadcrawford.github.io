@@ -29,7 +29,7 @@ In fact, here's a simple `hello world` example.
 
 {% gist e3e99f733add2830f89a %}
 
-With the code snippet above, you'll see a couple things different from the typical
+With the code snippet above, you'll see a couple things different from your typical
 [Rust][Rust] function.  So lets break it down ...
 
 - `#[no_mangle]`  This tells the [Rust][Rust] compiler to expose this a global function
@@ -40,9 +40,9 @@ and don't mangle it with an internal name
 Outside that, our function is a regular [Rust][Rust] function that does it's thing.
 
 # Compile in a slightly different way
-Now that the [Rust][Rust] code is exposed for external consumption, we need to ensure
-our binary is compiled in a manner Ruby can accept, specifically a dynamic library.  
-You can do this two ways, below I'm doing it through Cargo and a `toml` file.
+Now that your [Rust][Rust] code is exposed prepared properly, we need to ensure
+we compile in a manner Ruby can accept, specifically a dynamic library. You can do this two ways, the command line or a Cargo toml file.  I'm doing it
+through Cargo and a `toml` file below
 
 {% highlight toml %}
 
