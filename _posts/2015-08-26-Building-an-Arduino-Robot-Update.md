@@ -30,7 +30,7 @@ competitive racing.
 It's still early in the process, but the chassis, peziohertz speaker, and the software are all functioning.  
 The two Servo's are calibrated and running.
 
-![]({{ site.rul }}/assets/images/building-an-arduino-robot-update/arduino-parallax-robot-microbot.jpg)
+![]({{ site.url }}/assets/images/building-an-arduino-robot-update/arduino-parallax-robot-microbot.jpg)
 
 [Parallax robot kit]:   http://www.adafruit.com/product/749
 [Arduino]:              https://www.arduino.cc/
