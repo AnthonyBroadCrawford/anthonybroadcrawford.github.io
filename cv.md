@@ -31,7 +31,7 @@ Responsible for all Product, User Experience/Design, Marketing, Customer Support
 
 - Grew technology organization from 2 to 27 in 12 months.  Included UX, Engineering, Product Management, Product Marketing, Customer Support, and Dev Operations.
 
-- Expanded outsourced engineering capacity up to 7 engineers with two firms in less than 6 months.
+- Expanded contracted engineering capacity up to 7 engineers with two firms in less than 6 months.
 
 - Created a holistic agile Product Development operation (product, design, engineering) resulting in a continuos delivery operations with 5+ releases a week.
 
@@ -50,13 +50,13 @@ Responsible for all aspects of the business.  Took company from concept to reven
 
 - Responsible for company strategy uniquely positioning StartupBus as the premier hackathon attracting worlds top engineers and customers.
 
-- Led sales/business development, and partnerships in year resulting in premier customers such as Microsoft, AT&T, Box, and Rackspace.
+- Led sales/business development, and partnerships resulting in premier customers such as Microsoft, AT&T, Box, and Rackspace.
 
 - Increased revenue by 27% with the launch of consumer focused merchandising.
 
 - Accelerated European expansion via partnership and ultimately merger of two companies resulting in market leadership and secured revenue streams.
 
-- Grew and managed the business development team. Acquired key customers with Microsoft, AT&T, Twillio, Facebook, Twitter, Atlasssian, Xero, and more.
+- Grew and managed the business development team. Acquired key customers with Microsoft, AT&T, Twilio, Facebook, Twitter, Atlasssian, Xero, and more.
 
 # Chief Technology Officer, Within3;  2006 - 2012
 Responsible for all Product, User Experience/Design, and Technology strategy, execution, and teams.
