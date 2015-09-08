@@ -4,7 +4,7 @@ title: CV
 permalink: /CV/
 ---
 
-I'm a builder and a maker who has embraced continuous learning since childhood.  This passion for learning, exploring, and making, while contrasting new technologies and methodologies against old, has served me well in a rapidly evolving technology market. A technology market that is experiencing an unprecedented amount of growth and diversification, with no end in sight.
+I’m a maker and a builder who has embraced continuous learning since childhood.  This passion for learning, exploring, and making, while contrasting new technologies and methodologies against old, has served me well in a rapidly evolving technology market. A technology market that is experiencing an unprecedented amount of growth and diversification, with no end in sight.
 
 More importantly, I've been very successful in creating cultures and environments that embrace my same passion for learning.  These cultures result in rapid assessment and adoption of emerging technologies to improve their products and speed to market.  
 
