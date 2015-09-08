@@ -3,6 +3,15 @@ layout: page
 title: CV
 permalink: /CV/
 ---
+
+I'm a builder and a maker who has embraced continuous learning since childhood.  This passion for learning, exploring, and making, while contrasting new technologies and methodologies against old, has served me well in a rapidly evolving technology market. A technology market that is experiencing an unprecedented amount of growth and diversification, with no end in sight.
+
+More importantly, I've been very successful in creating cultures and environments that embrace my same passion for learning.  These cultures result in rapid assessment and adoption of emerging technologies to improve their products and speed to market.  
+
+In addition, a culture of education and learning provides a haven from the drastically constrained and competitive talent landscape.  Building the infrastructure to support learning at scale, allows for junior talent to become top contributors and then rapidly grow into senior leaders within a company.  
+
+My passion for learning provides me a unique advantage towards building great teams, that build amazing products.
+
 Below you will find a detailed history of my work over the last fifteen years.  You can additionally find more on my [LinkedIn Profile](https://www.linkedin.com/in/anthonybroadcrawford).
 
 # Chief Technology Officer, Fooda; December 2013 - Current
@@ -89,14 +98,9 @@ Responsible for technology strategy and execution.  Managed 12 technology platfo
 Most influential leader under the age of 35, Crain's Business 2011
 
 **Education** <br />
-BS in Computer Science, Technology and Society.  [Bowling Green State University][BGSU]
+BS in Computer Science, Technology and Society.  [Bowling Green State University](http://www.bgsu.edu)
 
 **Board appointments** <br />
 
 - [Dataportability.org](http://dataportability.org/)
 - [Startup Weekend, Cleveland](http://cleveland.startupweekend.org/)
-
-
-
-
-[BGSU]:   http://www.bgsu.edu
