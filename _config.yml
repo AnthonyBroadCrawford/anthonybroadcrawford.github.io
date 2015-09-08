@@ -13,3 +13,9 @@ highlighter: pygments
 
 # Build settings
 markdown: kramdown
+
+#analytics
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-21851573-1'

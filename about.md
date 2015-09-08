@@ -14,4 +14,4 @@ Along the way I've helped author/invent 8 patented technologies, taken two compa
 CTO (Chief Technology Officer), CPO (Chief Product Officer), and CEO (Chief Executive Officer) deeply entrenched
 in mobile since 2000.
 
-Feel free to drop me a line @ [anthony@anthonybroadcrawford.com](anthony@anthonybroadcrawford.com)
+Feel free to contact me [anthony@anthonybroadcrawford.com](anthony@anthonybroadcrawford.com)
