@@ -4,15 +4,17 @@ title: CV
 permalink: /CV/
 ---
 
-I’m a maker and a builder who has embraced continuous learning since childhood.  This passion for learning, exploring, and making, while contrasting new technologies and methodologies against old, has served me well in a rapidly evolving technology market. A technology market that is experiencing an unprecedented amount of growth and diversification, with no end in sight.
+I’m a maker and a builder who has embraced continuous learning since childhood.  My passion for learning, exploring and making, while contrasting emerging technologies and methodologies against old, has served me well in a rapidly evolving technology market. A technology market that is experiencing an unprecedented amount of growth and diversification, with no end in sight.
 
-More importantly, I've been very successful in creating cultures and environments that embrace my same passion for learning.  These cultures result in rapid assessment and adoption of emerging technologies to improve their products and speed to market.  
+More importantly, I've been very successful in creating organizational cultures and environments that embrace my same passion for learning.  These cultures result in more competitive technology portfolio, improved speed to market, and overall better product performance.  
 
-In addition, a culture of education and learning provides a haven from the drastically constrained and competitive talent landscape.  Building the infrastructure to support learning at scale, allows for junior talent to become top contributors and then rapidly grow into senior leaders within a company.  
+In addition, a culture of learning provides a haven from the drastically constrained and competitive talent landscape.  Building the infrastructure to support learning at scale not only attracts premier senior talent, but also attracts top emerging talent to become top contributors who then rapidly grow into senior leaders within the company.  
 
 My passion for learning provides me a unique advantage towards building great teams, that build amazing products.
 
 Below you will find a detailed history of my work over the last fifteen years.  You can additionally find more on my [LinkedIn Profile](https://www.linkedin.com/in/anthonybroadcrawford).
+
+<br/>
 
 # Chief Technology Officer, Fooda; December 2013 - Current
 Responsible for all Product, User Experience/Design, and Technology strategy, execution, and teams.
@@ -35,6 +37,8 @@ Responsible for all Product, User Experience/Design, and Technology strategy, ex
 
 - Visually rebranded Product lines with a new design language including visual design, typography, and art direction.  Modernized products look and feel.
 
+<br />
+
 # Chief Product Officer, GiveForward; October 2012 - December 2013
 Responsible for all Product, User Experience/Design, Marketing, Customer Support, Growth , and Technology strategy, execution, and teams.
 
@@ -54,6 +58,8 @@ Responsible for all Product, User Experience/Design, Marketing, Customer Support
 
 - Increased customer retention by shifting customer support organization strategy to revenue generation and fundraiser performance in addition to ticket throughput and quality.
 
+<br />
+
 # Chief Executive Officer, StartupBus; San Francisco,  2012
 Responsible for all aspects of the business.  Took company from concept to revenue generating Startup operating on multiple continents.  
 
@@ -66,6 +72,8 @@ Responsible for all aspects of the business.  Took company from concept to reven
 - Accelerated European expansion via partnership and ultimately merger of two companies resulting in market leadership and secured revenue streams.
 
 - Grew and managed the business development team. Acquired key customers with Microsoft, AT&T, Twilio, Facebook, Twitter, Atlasssian, Xero, and more.
+
+<br />
 
 # Chief Technology Officer, Within3;  2006 - 2012
 Responsible for all Product, User Experience/Design, and Technology strategy, execution, and teams.
@@ -82,6 +90,8 @@ Responsible for all Product, User Experience/Design, and Technology strategy, ex
 
 - Dramatically accelerated innovation by introducing continuos development, hackathons,  and automated testing resulting in a high degree of quality and speed to market.
 
+<br />
+
 # Enterprise Product Architect, Progressive; Cleveland 2001 - 2006
 Responsible for technology strategy and execution.  Managed 12 technology platforms servicing 80 million uniques a month.
 
@@ -93,6 +103,7 @@ Responsible for technology strategy and execution.  Managed 12 technology platfo
 
 - Built an enterprise web-applications architecture that allowed “build once” deploy everywhere across enterprise systems.  Technology reduced costs and time-to-market saving tens of millions a year.
 
+<br />
 
 **Awards** <br/>
 Most influential leader under the age of 35, Crain's Business 2011
