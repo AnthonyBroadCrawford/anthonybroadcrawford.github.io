@@ -6,8 +6,8 @@
 </description>
     <link>http://www.anthonybroadcrawford.com/</link>
     <atom:link href="http://www.anthonybroadcrawford.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2015 10:26:07 -0500</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2015 10:26:07 -0500</lastBuildDate>
+    <pubDate>Thu, 17 Sep 2015 10:51:13 -0500</pubDate>
+    <lastBuildDate>Thu, 17 Sep 2015 10:51:13 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -23,25 +23,6 @@
         <pubDate>Tue, 15 Sep 2015 16:00:00 -0500</pubDate>
         <link>http://www.anthonybroadcrawford.com/talks/2015/09/15/Talk---introduction-to-Rust-in-Ruby.html</link>
         <guid isPermaLink="true">http://www.anthonybroadcrawford.com/talks/2015/09/15/Talk---introduction-to-Rust-in-Ruby.html</guid>
-        
-        
-        <category>talks</category>
-        
-      </item>
-    
-      <item>
-        <title>Talk - Intro to Rust programming</title>
-        <description>&lt;p&gt;I’ve been exploring &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half and have really falling in love.  It’s a tremendous language that has a lot of potential for both junior and experienced teams.&lt;/p&gt;
-
-&lt;p&gt;This talk introduces the fundamentals of &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; for both junior and senior technologists who want to learn more about &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;&lt;/p&gt;
-
-&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/MPbeqRLITALWNV&quot; width=&quot;100%&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
-&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;/div&gt;
-
-</description>
-        <pubDate>Tue, 15 Sep 2015 16:00:00 -0500</pubDate>
-        <link>http://www.anthonybroadcrawford.com/talks/2015/09/15/Talk---Intro-to-Rust-programming.html</link>
-        <guid isPermaLink="true">http://www.anthonybroadcrawford.com/talks/2015/09/15/Talk---Intro-to-Rust-programming.html</guid>
         
         
         <category>talks</category>
@@ -487,6 +468,44 @@ a closure that is passed to your iOS app.&lt;/p&gt;
         <category>rust</category>
         
         <category>node</category>
+        
+      </item>
+    
+      <item>
+        <title>Talk - Intro to Rust programming</title>
+        <description>&lt;p&gt;I’ve been exploring &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half and have really falling in love.  It’s a tremendous language that has a lot of potential for both junior and experienced teams.&lt;/p&gt;
+
+&lt;p&gt;This talk introduces the fundamentals of &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; for both junior and senior technologists who want to learn more about &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/MPbeqRLITALWNV&quot; width=&quot;100%&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 01 Jul 2015 16:00:00 -0500</pubDate>
+        <link>http://www.anthonybroadcrawford.com/talks/2015/07/01/Talk---Intro-to-Rust-programming.html</link>
+        <guid isPermaLink="true">http://www.anthonybroadcrawford.com/talks/2015/07/01/Talk---Intro-to-Rust-programming.html</guid>
+        
+        
+        <category>talks</category>
+        
+      </item>
+    
+      <item>
+        <title>Talk - Release faster with design sprints</title>
+        <description>&lt;p&gt;Speed to market is becoming they key differentiator among companies and a key driver for a companies success or failure.  However, how does a company accelerate it’s speed to market?  Agile development is only one piece of a large puzzle and won’t do it alone.&lt;/p&gt;
+
+&lt;p&gt;In this talk I discuss how to accelerate your Product Development process and speed to market in addition to laying down a foundational component to making your entire company agile with &lt;a href=&quot;http://www.gv.com/sprint/&quot;&gt;Design Sprints&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/mosWnVVtmeNQuR&quot; width=&quot;100%&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 01 Jun 2015 16:00:00 -0500</pubDate>
+        <link>http://www.anthonybroadcrawford.com/talks/2015/06/01/Talk---Release-faster-with-design-sprints.html</link>
+        <guid isPermaLink="true">http://www.anthonybroadcrawford.com/talks/2015/06/01/Talk---Release-faster-with-design-sprints.html</guid>
+        
+        
+        <category>talks</category>
         
       </item>
     

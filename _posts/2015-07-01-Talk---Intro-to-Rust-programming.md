@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Talk - Intro to Rust programming"
-date:   2015-09-15 21:00:00
+date:   2015-07-01 21:00:00
 categories: talks
 ---
 I've been exploring [Rust][Rust] over the last year and a half and have really falling in love.  It's a tremendous language that has a lot of potential for both junior and experienced teams.
