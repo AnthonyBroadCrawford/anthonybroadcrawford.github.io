@@ -6,9 +6,33 @@
 </description>
     <link>http://www.anthonybroadcrawford.com/</link>
     <atom:link href="http://www.anthonybroadcrawford.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 17 Sep 2015 10:51:13 -0500</pubDate>
-    <lastBuildDate>Thu, 17 Sep 2015 10:51:13 -0500</lastBuildDate>
+    <pubDate>Tue, 22 Sep 2015 13:50:21 -0500</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2015 13:50:21 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>My first open source contriubtion</title>
+        <description>&lt;p&gt;I’ve been the benefactor of open source software since college in the late 1990’s.  Given I’ve been using open source software that long, it’s actually shameful it took me until this week to contribute back to the community.&lt;/p&gt;
+
+&lt;p&gt;I’m no stranger to standing on the shoulders of open source giants.  Most technology companies benefit from it and it has continually given me, and my companies, so much.  However, my lack of a return contribution recently changed as I committed to an open source project, &lt;a href=&quot;https://en.wikipedia.org/wiki/Servo_(layout_engine)&quot;&gt;Servo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My contribution was small, by design on both parties, but it’s a start.  I made a small user experience improvement in some Python installation scripts.  I hope to additionally contribute back to the &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; project.  Hopefully this snowballs as time goes on.&lt;/p&gt;
+
+&lt;p&gt;One &lt;a href=&quot;https://github.com/servo/servo/pull/7678&quot;&gt;down&lt;/a&gt;, and many more to go.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 22 Sep 2015 16:11:51 -0500</pubDate>
+        <link>http://www.anthonybroadcrawford.com/servo/rust/opensource/2015/09/22/My-first-opensource-contribution.html</link>
+        <guid isPermaLink="true">http://www.anthonybroadcrawford.com/servo/rust/opensource/2015/09/22/My-first-opensource-contribution.html</guid>
+        
+        
+        <category>servo</category>
+        
+        <category>rust</category>
+        
+        <category>opensource</category>
+        
+      </item>
     
       <item>
         <title>Talk - Introducing Rust to Ruby</title>
@@ -56,7 +80,9 @@ so long as you understand a few simple things, namely&lt;/p&gt;
 &lt;p&gt;Ultimately, you don’t need to do a whole lot to make your &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; code available to C.&lt;br /&gt;
 In fact, here’s a simple &lt;code&gt;hello world&lt;/code&gt; example.&lt;/p&gt;
 
-&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/e3e99f733add2830f89a.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/e3e99f733add2830f89a.js&quot;&gt; &lt;/script&gt;
 
 &lt;p&gt;With the code snippet above, you’ll see a couple things different from your typical
 &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; function.  So lets break it down …&lt;/p&gt;
