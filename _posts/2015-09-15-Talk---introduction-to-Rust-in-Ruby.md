@@ -4,7 +4,7 @@ title:  "Talk - Introducing Rust to Ruby"
 date:   2015-09-15 21:00:00
 categories: talks
 ---
-I've been exploring [Rust][Rust] over the last year and a half with one big question on my mind, how do I integrate [Rust][Rust] into an existing codebsae.  At [Fooda](www.fooda.com) that's a Rails application.  
+I've been exploring [Rust][Rust] over the last year and a half with one big question on my mind, how do I integrate [Rust][Rust] into an existing codebase.  At [Fooda](www.fooda.com) that's a Rails application.  
 
 This talk introduces the fundamental components to leveraging [Rust][Rust] from within a [Ruby](https://www.ruby-lang.org/en/) application like [Rails](http://www.rails.org)
 
