@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "My first open source contriubtion"
+title:  "My first open source contribution"
 date:   2015-09-22 21:11:51
 categories: servo rust opensource
 ---
