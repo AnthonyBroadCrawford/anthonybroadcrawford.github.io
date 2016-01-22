@@ -101,7 +101,7 @@ and don’t mangle it with an internal name</li>
 we compile in a manner Ruby can accept, specifically a dynamic library. You can do this two ways, the command line or a Cargo toml file.  I’m doing it
 through Cargo and a <code>toml</code> file below</p>
 
-<div class="highlight"><pre><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="n">package</span><span class="p">]</span>
+<figure class="highlight"><pre><code class="language-toml" data-lang="toml"><span class="p">[</span><span class="n">package</span><span class="p">]</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;library&quot;</span>
 <span class="n">version</span> <span class="o">=</span> <span class="s">&quot;0.1.0&quot;</span>
 <span class="n">authors</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Anthony Broad-Crawford &lt;anthony@anthonybroadcrawford.com&gt;&quot;</span><span class="p">]</span>
@@ -110,7 +110,7 @@ through Cargo and a <code>toml</code> file below</p>
 <span class="n">crate-type</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;dylib&quot;</span><span class="p">]</span>
 
 <span class="p">[</span><span class="n">dependencies</span><span class="p">]</span>
-<span class="n">libc</span> <span class="o">=</span> <span class="s">&quot;0.1.10&quot;</span></code></pre></div>
+<span class="n">libc</span> <span class="o">=</span> <span class="s">&quot;0.1.10&quot;</span></code></pre></figure>
 
 <p>When you execute <code>Cargo build</code> you will now have a dynamic library <code>.dylib</code> in your
 targets folder.</p>
@@ -121,14 +121,14 @@ mapping of the functionality you expose in your <a href="https://www.rust-lang.o
 
 <p>Here’s an example of how this is done leveraging <code>ffi</code></p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;ffi&#39;</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="nb">require</span> <span class="s1">&#39;ffi&#39;</span>
 
 <span class="k">module</span> <span class="nn">Rust</span>
   <span class="kp">extend</span> <span class="no">FFI</span><span class="o">::</span><span class="no">Library</span>
   <span class="n">ffi_lib</span> <span class="s1">&#39;../rust-library/target/debug/liblibrary.dylib&#39;</span>
 
   <span class="n">attach_function</span> <span class="ss">:hello_world</span><span class="p">,</span> <span class="o">[]</span><span class="p">,</span> <span class="ss">:string</span>
-<span class="k">end</span></code></pre></div>
+<span class="k">end</span></code></pre></figure>
 
 <p>Please note, the <code>path</code> reference above in the <code>ffi_lib</code> method call is specific to a sample project I’ve
 included below.</p>
@@ -136,7 +136,7 @@ included below.</p>
 <h1 id="test-drive-in-irb">Test drive in IRB</h1>
 <p>At this point you are able to take it for a test drive in irb.</p>
 
-<div class="highlight"><pre><code class="language-bash" data-lang="bash">ABC-194:rust-library anthony<span class="nv">$ </span>Cargo build
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">ABC-194:rust-library anthony<span class="nv">$ </span>Cargo build
    Compiling libc v0.1.10
    Compiling library v0.1.0 <span class="o">(</span>file:///Users/anthony/example_rust_called_from_ruby/rust-library<span class="o">)</span>
 ABC-194:rust-library anthony<span class="nv">$ </span><span class="nb">cd</span> ..
@@ -150,7 +150,7 @@ ABC-194:ruby-library anthony<span class="nv">$ </span>irb
  <span class="o">=</span>&gt; <span class="nb">true</span>
 2.0.0-p247 :002 &gt; Rust::hello_world
  <span class="o">=</span>&gt; <span class="s2">&quot;hello world&quot;</span>
-2.0.0-p247 :003 &gt;</code></pre></div>
+2.0.0-p247 :003 &gt;</code></pre></figure>
 
 <p>That’s it.  I was incredibly surprised at how easy it was.  The only thing I don’t like,
 is maintaining that one-to-one mapping in via <code>ffi</code> in Ruby.  A small price to pay, I guess.</p>

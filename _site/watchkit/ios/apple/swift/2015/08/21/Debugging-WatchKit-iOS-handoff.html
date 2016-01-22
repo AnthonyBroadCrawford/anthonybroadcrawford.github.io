@@ -10,7 +10,7 @@
   <meta name="description" content="I recently built an Apple iOS WatchKit app and part of that was improvingthe user experience by leveraging Apple’s Handoff technology.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://www.anthonybroadcrawford.com/watchkit/ios/apple/swift/2015/08/21/Debugging%20WatchKit%20iOS%20handoff.html">
+  <link rel="canonical" href="http://www.anthonybroadcrawford.com/watchkit/ios/apple/swift/2015/08/21/Debugging-WatchKit-iOS-handoff.html">
   <link rel="alternate" type="application/rss+xml" title="Anthony Broad-Crawford" href="http://www.anthonybroadcrawford.com/feed.xml" />
   <link rel="shortcut icon" type="image/png" href="http://www.anthonybroadcrawford.com/assets/images/favicon.png">
 </head>
@@ -92,7 +92,7 @@ and nothing more.  So name them whatever makes the most sense to your app and th
 <p>In our <a href="http://developer.apple.com/watchkit/">WatchKit</a> example below, when a customer slides up the <a href="http://developer.apple.com/watchkit/">WatchKit</a>
 app’s Glance, we are going to initiate a hand off to iOS</p>
 
-<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kr">override</span> <span class="k">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nl">context</span><span class="p">:</span> <span class="n">AnyObject</span><span class="o">?</span><span class="p">)</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kr">override</span> <span class="k">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nl">context</span><span class="p">:</span> <span class="n">AnyObject</span><span class="o">?</span><span class="p">)</span> <span class="p">{</span>
   <span class="nb">super</span><span class="p">.</span><span class="n">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 
   <span class="k">let</span> <span class="nl">userInfo</span> <span class="p">:</span> <span class="p">[</span><span class="nl">NSObject</span><span class="p">:</span><span class="n">AnyObject</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;handoff_activity&quot;</span><span class="o">:</span><span class="s">&quot;login&quot;</span><span class="p">]</span>
@@ -101,7 +101,7 @@ app’s Glance, we are going to initiate a hand off to iOS</p>
     <span class="nl">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">,</span>
     <span class="nl">webpageURL</span><span class="p">:</span> <span class="nb">nil</span>
   <span class="p">)</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <p>At this point, <a href="https://developer.apple.com/handoff/">Handoff</a> still won’t work, as we haven’t “caught” the
 <code>activity</code> handed to our iOS app.  However, this completes the<code>request</code> to
@@ -110,10 +110,10 @@ app’s Glance, we are going to initiate a hand off to iOS</p>
 <h1 id="preparing-your-app-for-ios-handoff">Preparing your app for iOS Handoff</h1>
 <p>First you need to update your iOS app <code>AppDelegate</code>.  Specifically, you will need to add the <code>continueUserActivity</code> method.</p>
 
-<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">func</span> <span class="n">application</span><span class="p">(</span><span class="nl">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">continueUserActivity</span> <span class="nl">userActivity</span><span class="p">:</span> <span class="n">NSUserActivity</span><span class="p">,</span> <span class="nl">restorationHandler</span><span class="p">:</span> <span class="p">([</span><span class="n">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Bool</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">func</span> <span class="n">application</span><span class="p">(</span><span class="nl">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">continueUserActivity</span> <span class="nl">userActivity</span><span class="p">:</span> <span class="n">NSUserActivity</span><span class="p">,</span> <span class="nl">restorationHandler</span><span class="p">:</span> <span class="p">([</span><span class="n">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Bool</span> <span class="p">{</span>
     <span class="n">restorationHandler</span><span class="p">([</span><span class="nb">self</span><span class="p">.</span><span class="n">window</span><span class="o">!</span><span class="p">.</span><span class="n">rootViewController</span><span class="o">!</span><span class="p">])</span>
     <span class="k">return</span> <span class="nb">true</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <p>There are a few things in the above code snippet to notice, specifically the call to <code>restorationHandler</code>.  The <code>restorationHandler</code> closure is the final step to make the <a href="https://developer.apple.com/handoff/">Handoff</a> icon appear
 on the iPhone’s lock screen.</p>
@@ -123,7 +123,7 @@ on the iPhone’s lock screen.</p>
 <p>These have been trivial examples, so ultimately you’re most likely going to do something like
 the following</p>
 
-<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kr">override</span> <span class="k">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nl">context</span><span class="p">:</span> <span class="n">AnyObject</span><span class="o">?</span><span class="p">)</span> <span class="p">{</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kr">override</span> <span class="k">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nl">context</span><span class="p">:</span> <span class="n">AnyObject</span><span class="o">?</span><span class="p">)</span> <span class="p">{</span>
   <span class="nb">super</span><span class="p">.</span><span class="n">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 
   <span class="k">let</span> <span class="nl">request</span> <span class="p">:</span> <span class="p">[</span><span class="nl">NSObject</span><span class="p">:</span><span class="n">AnyObject</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;request&quot;</span><span class="o">:</span><span class="s">&quot;user_logged_in&quot;</span><span class="p">]</span>
@@ -146,7 +146,7 @@ the following</p>
       <span class="n">some_func_to_display_the_login_ui_vs_the_normal_ui</span><span class="p">()</span>
     <span class="p">}</span>
   <span class="p">})</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 
   </article>
