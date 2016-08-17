@@ -16,7 +16,10 @@ Below you will find a detailed history of my work over the last fifteen years.  
 
 <br/>
 
-# Chief Technology Officer, Fooda; December 2013 - Current
+#Chief Product Officer, SpotHero, December 2015 - Present
+Responsible for all Product, User Experience/Design, and DataSciences.  
+
+# Chief Technology Officer, Fooda; December 2013 - December 2015
 Responsible for all Product, User Experience/Design, and Technology strategy, execution, and teams.
 
 - Grew the technology organization from of 3 to 32 in less than 12 months.  Included nationally recognized senior talent balanced with exceptional junior talent.
