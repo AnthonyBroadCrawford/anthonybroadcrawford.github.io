@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anthony Broad-Crawford</title>
+    <description>A maker and a builder who believes you should never stop learning.  I am a CTO, CPO, &amp; CEO in the mobile &amp; healthcare markets.
+</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 24 Jan 2018 18:46:56 -0600</pubDate>
+    <lastBuildDate>Wed, 24 Jan 2018 18:46:56 -0600</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>Experimenting with new habits</title>
+        <description>&lt;p&gt;I recently took off the month of December.  It was an amazing decision that finally gave me some uninterrupted time to focused on my family and myself.&lt;/p&gt;
+
+&lt;p&gt;This time off afforded me the ability experiment with a lot of changes to my daily routine.  The end goal being a more balanced and focused day-to-day me.  With the idea that an improved “me” allows room for improving all other areas.&lt;/p&gt;
+
+&lt;p&gt;I tried about 13 different things that range from focusing on exercise, to eating habits and patterns, diet, meditation, and more.  A lot stuck, and a lot didn’t however, the ones that stuck I find truly awesome.&lt;/p&gt;
+
+&lt;h1 id=&quot;high-protein-breakfast&quot;&gt;High protein breakfast&lt;/h1&gt;
+&lt;p&gt;This was the easiest to pull off and has had the biggest return.   I’ll let you google all the benefits, but the punchline for me is I’m never hungry and have lost weight.&lt;/p&gt;
+
+&lt;p&gt;I start the day with ~40 grams of protein in the 300-450 calorie range and do the same again around lunch.&lt;/p&gt;
+
+&lt;p&gt;I eat breakfast around 5:30 am and usually ravenous by lunch.  Now, I’m barely hungry come noon.  This has not only made me eat less but also healthier.  Plus, I eat a lot of foods that I love.&lt;/p&gt;
+
+&lt;p&gt;I kept this habit and even extended it to lunch at the office.  I have to pack and lug my lunch into the office, but I somehow manage to survive.&lt;/p&gt;
+
+&lt;h1 id=&quot;ice-cold-morning-showers&quot;&gt;Ice cold morning showers&lt;/h1&gt;
+&lt;p&gt;I’m not talking warm, cool, or only “kinda” cold.  These are shockingly cold showers, the kind that make you gasp for air and borderline going into shock cold showers.&lt;/p&gt;
+
+&lt;p&gt;Why?  I initially explored (well, stumbled across an article on Medium) cold showers for their health benefits.  If you google this you will typically see a list of somewhere between 7-11 amazing advantages.  I asked my doctors about this, they had never heard of it.  So I don’t do it for the health reasons, I do it for simply how it makes me feel during and after the shower.&lt;/p&gt;
+
+&lt;p&gt;When I step out of that shower each morning I feel a level of alert and alive I cannot describe.  It’s awesome!!  It’s a rush and almost a high for the next hour or so and I feel more alert long into the day.&lt;/p&gt;
+
+&lt;p&gt;I guess those Polar bear clubs had a great idea!&lt;/p&gt;
+
+&lt;h1 id=&quot;finally-going-to-the-gym&quot;&gt;Finally going to the gym&lt;/h1&gt;
+&lt;p&gt;This is an obvious one however, I always struggled finding a way to squeeze this into my hectic schedule.  When choosing between time with the family, my kids, my wife, or work, this always got pushed.&lt;/p&gt;
+
+&lt;p&gt;Over the course of December and now into the new year I have a great habit of going to the gym about 3 times a week.  I’ve even taken the momentum from December and found creative ways to work it into my schedule now that I’ve taken on a full-time client for the next several months.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A simple routine of about 20 minutes of exercise each morning (not exactly each morning yet, but getting close)&lt;/li&gt;
+  &lt;li&gt;One awful morning of getting up at 4:30 am in the morning to hit the gym before work&lt;/li&gt;
+  &lt;li&gt;Two trips to the gym on the weekend&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This took me from zero trips in the gym pre-break to doing a heck of a lot better now.&lt;/p&gt;
+
+&lt;h1 id=&quot;daily-meditation&quot;&gt;Daily meditation&lt;/h1&gt;
+&lt;p&gt;I know there are a lot of formal methods of meditation to choose from.  I’ll maybe someday get into those, but I wanted something a little more light weight to start.&lt;/p&gt;
+
+&lt;p&gt;So I keep it simple.  I make sure each day to reflect on the following&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;How am I progressing on my goals&lt;/li&gt;
+  &lt;li&gt;Why am I thankful&lt;/li&gt;
+  &lt;li&gt;What can I improve about me, as a father, and as a husband&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Doesn’t take more than fifteen minutes and I make sure to write down my reflections.  Writing it down somehow makes me feel more committed and allows me to read back through previous days.&lt;/p&gt;
+
+&lt;p&gt;#The payoff
+I previously kept my habit of getting up early in the morning and reducing almost all alcohol from my diet.  With these new habits, I’ve never felt better. Even better is with this direction and momentum I feel it providing positive impact on the other aspects of my life.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jan 2016 18:00:00 -0600</pubDate>
+        <link>http://localhost:4000/health/2016/01/20/experimenting-with-change.html</link>
+        <guid isPermaLink="true">http://localhost:4000/health/2016/01/20/experimenting-with-change.html</guid>
+        
+        
+        <category>health</category>
+        
+      </item>
+    
+      <item>
+        <title>Talk - High performance Ruby with Rust</title>
+        <description>&lt;p&gt;I’ve been exploring &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half with one big question on my mind, how do I integrate &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; into an existing codebase.&lt;/p&gt;
+
+&lt;p&gt;Taking a high performance language like &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; and pairing it with &lt;a href=&quot;http://www.rails.org&quot;&gt;Rails&lt;/a&gt;, a technology built for rapid feature development, would give a technology team the best of both worlds.&lt;/p&gt;
+
+&lt;p&gt;This talk introduces the fundamental components to leveraging &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; from within a &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; technology like &lt;a href=&quot;http://www.rails.org&quot;&gt;Rails&lt;/a&gt; and how to build for high performance.&lt;/p&gt;
+
+&lt;p&gt;I’ll be given this talk on 11/3/15 @ Groupon’s &lt;a href=&quot;http://www.meetup.com/Geekfest/&quot;&gt;Geekfest&lt;/a&gt;.  You can RSVP &lt;a href=&quot;http://www.meetup.com/Geekfest/events/225236009/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 22 Sep 2015 19:00:00 -0500</pubDate>
+        <link>http://localhost:4000/talks/2015/09/22/Talk-High-performance-Ruby-with-Rust.html</link>
+        <guid isPermaLink="true">http://localhost:4000/talks/2015/09/22/Talk-High-performance-Ruby-with-Rust.html</guid>
+        
+        
+        <category>talks</category>
+        
+      </item>
+    
+      <item>
+        <title>My first open source contribution</title>
+        <description>&lt;p&gt;I’ve been the benefactor of open source software since college in the late 1990’s.  Given I’ve been using open source software that long, it’s actually shameful it took me until this week to contribute back to the community.&lt;/p&gt;
+
+&lt;p&gt;I’m no stranger to standing on the shoulders of open source giants.  Most technology companies benefit from it and it has continually given me, and my companies, so much.  However, my lack of a return contribution recently changed as I committed to an open source project, &lt;a href=&quot;https://en.wikipedia.org/wiki/Servo_(layout_engine)&quot;&gt;Servo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;My contribution was small, by design on both parties, but it’s a start.  I made a small user experience improvement in some Python installation scripts.  I hope to additionally contribute back to the &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; project.  Hopefully this snowballs as time goes on.&lt;/p&gt;
+
+&lt;p&gt;One &lt;a href=&quot;https://github.com/servo/servo/pull/7678&quot;&gt;down&lt;/a&gt;, and many more to go.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 22 Sep 2015 16:11:51 -0500</pubDate>
+        <link>http://localhost:4000/servo/rust/opensource/2015/09/22/My-first-opensource-contribution.html</link>
+        <guid isPermaLink="true">http://localhost:4000/servo/rust/opensource/2015/09/22/My-first-opensource-contribution.html</guid>
+        
+        
+        <category>servo</category>
+        
+        <category>rust</category>
+        
+        <category>opensource</category>
+        
+      </item>
+    
+      <item>
+        <title>Talk - Introducing Rust to Ruby</title>
+        <description>&lt;p&gt;I’ve been exploring &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half with one big question on my mind, how do I integrate &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; into an existing codebase.  At &lt;a href=&quot;www.fooda.com&quot;&gt;Fooda&lt;/a&gt; that’s a Rails application.&lt;/p&gt;
+
+&lt;p&gt;This talk introduces the fundamental components to leveraging &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; from within a &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; application like &lt;a href=&quot;http://www.rails.org&quot;&gt;Rails&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/4rsob0GDicQzFC&quot; width=&quot;100%&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/broadcrawford/intro-to-introducing-rust-to-ruby&quot; title=&quot;Intro to introducing rust to ruby&quot; target=&quot;_blank&quot;&gt;&lt;/a&gt; &lt;/strong&gt; &lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 15 Sep 2015 16:00:00 -0500</pubDate>
+        <link>http://localhost:4000/talks/2015/09/15/Talk-introduction-to-Rust-in-Ruby.html</link>
+        <guid isPermaLink="true">http://localhost:4000/talks/2015/09/15/Talk-introduction-to-Rust-in-Ruby.html</guid>
+        
+        
+        <category>talks</category>
+        
+      </item>
+    
+      <item>
+        <title>Calling Rust from Ruby</title>
+        <description>&lt;p&gt;I’ve falling in love with &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half.  I like it
+for a lot of reasons, a few being the compiler, seperation of noun/verb,
+and it’s deeply integrated testing.   However, recently been thinking through ways
+to introduce it to the team and the technology portfolio at &lt;a href=&quot;http://www.fooda.com&quot;&gt;Fooda&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One idea we had, was move some of our computational intensive tasks to &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;
+given that is one of it’s “sweet spots” as a technology.  However, this left us wondering
+how exactly would we mix it in with Ruby.  Specifically, how do we call &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;
+from within Ruby.&lt;/p&gt;
+
+&lt;p&gt;As it turns out, it’s actually fairly easy to call &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; from within Ruby
+so long as you understand a few simple things, namely&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Rust&lt;/li&gt;
+  &lt;li&gt;C and ABI&lt;/li&gt;
+  &lt;li&gt;FFI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With those, and a few lines of code to begin calling Rust from within your Ruby code.&lt;/p&gt;
+
+&lt;h1 id=&quot;preparing-rust-to-be-callable-from-ruby&quot;&gt;Preparing Rust to be “callable” from Ruby&lt;/h1&gt;
+&lt;p&gt;Ultimately, you don’t need to do a whole lot to make your &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; code available to C.&lt;br /&gt;
+In fact, here’s a simple &lt;code&gt;hello world&lt;/code&gt; example.&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/e3e99f733add2830f89a.js&quot;&gt; &lt;/script&gt;
+
+&lt;p&gt;With the code snippet above, you’ll see a couple things different from your typical
+&lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; function.  So lets break it down …&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;#[no_mangle]&lt;/code&gt;  This tells the &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; compiler to expose this a global function
+and don’t mangle it with an internal name&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;extern &quot;C&quot;&lt;/code&gt; This exposes the function as if it was a &lt;code&gt;C&lt;/code&gt; function via the &lt;code&gt;C ABI&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;*const libc::c_char&lt;/code&gt; Our function returns a &lt;code&gt;C&lt;/code&gt; “string”&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Outside that, our function is a regular &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; function that does it’s thing.&lt;/p&gt;
+
+&lt;h1 id=&quot;compile-in-a-slightly-different-way&quot;&gt;Compile in a slightly different way&lt;/h1&gt;
+&lt;p&gt;Now that your &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; code is exposed prepared properly, we need to ensure
+we compile in a manner Ruby can accept, specifically a dynamic library. You can do this two ways, the command line or a Cargo toml file.  I’m doing it
+through Cargo and a &lt;code&gt;toml&lt;/code&gt; file below&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;library&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;0.1.0&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;authors&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Anthony Broad-Crawford &amp;lt;anthony@anthonybroadcrawford.com&amp;gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;crate-type&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dylib&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dependencies&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;libc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;0.1.10&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;When you execute &lt;code&gt;Cargo build&lt;/code&gt; you will now have a dynamic library &lt;code&gt;.dylib&lt;/code&gt; in your
+targets folder.&lt;/p&gt;
+
+&lt;h1 id=&quot;including-your-rust-library-in-ruby&quot;&gt;Including your Rust library in Ruby&lt;/h1&gt;
+&lt;p&gt;If there’s an icky part to this whole process, this is it right here.  You’ll need a one-to-one
+mapping of the functionality you expose in your &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; dynamic library to your &lt;code&gt;Ruby&lt;/code&gt; application.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example of how this is done leveraging &lt;code&gt;ffi&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;ffi&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Rust&lt;/span&gt;
+  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FFI&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Library&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;ffi_lib&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;../rust-library/target/debug/liblibrary.dylib&amp;#39;&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;attach_function&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:hello_world&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:string&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Please note, the &lt;code&gt;path&lt;/code&gt; reference above in the &lt;code&gt;ffi_lib&lt;/code&gt; method call is specific to a sample project I’ve
+included below.&lt;/p&gt;
+
+&lt;h1 id=&quot;test-drive-in-irb&quot;&gt;Test drive in IRB&lt;/h1&gt;
+&lt;p&gt;At this point you are able to take it for a test drive in irb.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span&gt;&lt;/span&gt;ABC-194:rust-library anthony$ Cargo build
+   Compiling libc v0.1.10
+   Compiling library v0.1.0 &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;file:///Users/anthony/example_rust_called_from_ruby/rust-library&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+ABC-194:rust-library anthony$ &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ..
+ABC-194:example_rust_called_from_ruby anthony$ ls
+.            ..           .git         ruby-library rust-library
+ABC-194:example_rust_called_from_ruby anthony$ &lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ruby-library/
+ABC-194:ruby-library anthony$ ls
+.              ..             ruby-client.rb
+ABC-194:ruby-library anthony$ irb
+&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;.0.0-p247 :001 &amp;gt; require &lt;span class=&quot;s2&quot;&gt;&amp;quot;./ruby-client&amp;quot;&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;.0.0-p247 :002 &amp;gt; Rust::hello_world
+ &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&amp;gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;hello world&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;.0.0-p247 :003 &amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;That’s it.  I was incredibly surprised at how easy it was.  The only thing I don’t like,
+is maintaining that one-to-one mapping in via &lt;code&gt;ffi&lt;/code&gt; in Ruby.  A small price to pay, I guess.&lt;/p&gt;
+
+&lt;h1 id=&quot;complete-working-example&quot;&gt;Complete working example&lt;/h1&gt;
+&lt;p&gt;I’ve put together a complete working example that will allow you from irb to call into
+a &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; module.  It’s a &lt;code&gt;hello world&lt;/code&gt; but it works.&lt;/p&gt;
+
+&lt;p&gt;It’s found &lt;a href=&quot;https://github.com/AnthonyBroadCrawford/example_rust_called_from_ruby&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 27 Aug 2015 16:11:51 -0500</pubDate>
+        <link>http://localhost:4000/rust/ruby/2015/08/27/Calling-Rust-From-Ruby.html</link>
+        <guid isPermaLink="true">http://localhost:4000/rust/ruby/2015/08/27/Calling-Rust-From-Ruby.html</guid>
+        
+        
+        <category>Rust</category>
+        
+        <category>Ruby</category>
+        
+      </item>
+    
+      <item>
+        <title>Building an Arduino robot - Update</title>
+        <description>&lt;p&gt;It’s been a few months since I purchased the &lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; &lt;a href=&quot;http://www.adafruit.com/product/749&quot;&gt;Parallax robot kit&lt;/a&gt;.  It’s a mix of hardware and software with a “following the bouncing ball”tutorial on
+how to bring the robot to life.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;robot&lt;/code&gt; is simple.  It’s a three wheeled single axle chassis with “collision detectors”
+mounted on the front to help it change directions when it comes in contact with a
+stationary object.  Basically a Rumba without a vacuum, ergo value.&lt;/p&gt;
+
+&lt;p&gt;I’ve always loved robots and electronics as a kid.  Loved it even more in college
+when I had to take two years worth of electrical engineering.  However, I never
+got the opportunity to get my hands dirty physically building something electronic.  The &lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; &lt;a href=&quot;http://www.adafruit.com/product/749&quot;&gt;Parallax robot kit&lt;/a&gt; has scratched that itch.&lt;/p&gt;
+
+&lt;p&gt;I’m guessing I’m about 2/3 of the way through the initial build out, but my observations thus far&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I love the “shield” concept from Arduino&lt;/li&gt;
+  &lt;li&gt;The Parallax BOE (Board of Education) shield is awesome&lt;/li&gt;
+  &lt;li&gt;The “pseudo” &lt;a href=&quot;https://www.arduino.cc/en/Reference/HomePage&quot;&gt;C code&lt;/a&gt; from &lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; isn’t bad, but it’s not great&lt;/li&gt;
+  &lt;li&gt;My daughters LOVE working on this robot.  They’ve named her Eve.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I look forward to wrapping this up in the next few weekends and then starting my combat drone from
+competitive racing.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-progress&quot;&gt;The progress&lt;/h1&gt;
+&lt;p&gt;It’s still early in the process, but the chassis, peziohertz speaker, and the software are all functioning.&lt;br /&gt;
+The two Servo’s are calibrated and running.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/building-an-arduino-robot-update/arduino-parallax-robot-microbot.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 26 Aug 2015 16:11:51 -0500</pubDate>
+        <link>http://localhost:4000/arduino/robotics/microbot/2015/08/26/Building-an-Arduino-Robot-Update.html</link>
+        <guid isPermaLink="true">http://localhost:4000/arduino/robotics/microbot/2015/08/26/Building-an-Arduino-Robot-Update.html</guid>
+        
+        
+        <category>Arduino</category>
+        
+        <category>Robotics</category>
+        
+        <category>Microbot</category>
+        
+      </item>
+    
+      <item>
+        <title>Debugging WatchKit iOS handoff</title>
+        <description>&lt;p&gt;I recently built an Apple iOS &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app and part of that was improving
+the user experience by leveraging Apple’s &lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handoff&lt;/a&gt; technology.&lt;/p&gt;
+
+&lt;p&gt;As seems to be the &lt;code&gt;pattern&lt;/code&gt; lately with &lt;a href=&quot;http://developer.apple.com&quot;&gt;Apple’s&lt;/a&gt; &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; documentation, this turned
+out to take a few hours longer than it should have.&lt;/p&gt;
+
+&lt;p&gt;If you are trying to enable &lt;a href=&quot;http://developer.apple.com&quot;&gt;Apple’s&lt;/a&gt; &lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handoff&lt;/a&gt; and it isn’t working, it’s most
+likely because one of the three steps below wasn’t completed.&lt;/p&gt;
+
+&lt;h1 id=&quot;three-simple-steps-to-handoff&quot;&gt;Three simple steps to handoff&lt;/h1&gt;
+&lt;p&gt;In the end, it’s actually quite simple and &lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handoff&lt;/a&gt; comes down to a few small changes&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Declaring what activities your iOS app can have “&lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handed off&lt;/a&gt;”&lt;/li&gt;
+  &lt;li&gt;Handing off from your &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app to your iOS app&lt;/li&gt;
+  &lt;li&gt;Receiving and processing the &lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handed off&lt;/a&gt; in your iOS app&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although this example is from &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; to iOS, you could do this from iOS to OSX.&lt;/p&gt;
+
+&lt;h1 id=&quot;declaring-activities&quot;&gt;Declaring activities&lt;/h1&gt;
+&lt;p&gt;Ultimately, not just “anything” can be handed off to your iOS app.  In order to get the hand off
+icon to appear on the iOS app, your iOS app must &lt;code&gt;declare&lt;/code&gt; which &lt;code&gt;activities&lt;/code&gt; it can handle.&lt;/p&gt;
+
+&lt;p&gt;To declare activities, you add the &lt;code&gt;NSUserActivityTypes&lt;/code&gt; key to your apps plist file as an array,
+and then give meaningful names to the activities your app can handle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/Debugging-WatchKit-iOS-handoff/NSUserActivityTypes-info.plist.png&quot; alt=&quot;NSUserActivityTypes Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Keep in mind, these are just symbolic names that you will reference from the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app
+and nothing more.  So name them whatever makes the most sense to your app and these activities.&lt;/p&gt;
+
+&lt;h1 id=&quot;handing-off-to-your-ios-app&quot;&gt;Handing off to your iOS app&lt;/h1&gt;
+
+&lt;p&gt;In our &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; example below, when a customer slides up the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt;
+app’s Glance, we are going to initiate a hand off to iOS&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kc&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userInfo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;handoff_activity&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;login&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;updateUserActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;com.YourApp.YourDomain.loginHandoffAcivity&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;webpageURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;At this point, &lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handoff&lt;/a&gt; still won’t work, as we haven’t “caught” the
+&lt;code&gt;activity&lt;/code&gt; handed to our iOS app.  However, this completes the&lt;code&gt;request&lt;/code&gt; to
+&lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handoff&lt;/a&gt; from the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app.&lt;/p&gt;
+
+&lt;h1 id=&quot;preparing-your-app-for-ios-handoff&quot;&gt;Preparing your app for iOS Handoff&lt;/h1&gt;
+&lt;p&gt;First you need to update your iOS app &lt;code&gt;AppDelegate&lt;/code&gt;.  Specifically, you will need to add the &lt;code&gt;continueUserActivity&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;continueUserActivity&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;NSUserActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;restorationHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Bool&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;restorationHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;!.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rootViewController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;!])&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;There are a few things in the above code snippet to notice, specifically the call to &lt;code&gt;restorationHandler&lt;/code&gt;.  The &lt;code&gt;restorationHandler&lt;/code&gt; closure is the final step to make the &lt;a href=&quot;https://developer.apple.com/handoff/&quot;&gt;Handoff&lt;/a&gt; icon appear
+on the iPhone’s lock screen.&lt;/p&gt;
+
+&lt;h1 id=&quot;bringing-it-all-together&quot;&gt;Bringing it all together&lt;/h1&gt;
+
+&lt;p&gt;These have been trivial examples, so ultimately you’re most likely going to do something like
+the following&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kc&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;request&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;user_logged_in&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;//Send a request to your iOS app, most likely to fetch some remote data&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;WKInterfaceController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;openParentApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//This is a hackish simplified short hand, you&amp;#39;ll need to verify the response in the reply hash and parse out if the user has logged in&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;user_logged_in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;response&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user_logged_in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;//you can populate this hash with any relevant handoff or user data&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;userInfo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;handoff_activity&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;login&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;updateUserActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;com.YourApp.YourDomain.loginHandoffAcivity&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;webpageURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;//inform the user on your Glance UI that they need to log&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;some_func_to_display_the_login_ui_vs_the_normal_ui&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Fri, 21 Aug 2015 16:11:51 -0500</pubDate>
+        <link>http://localhost:4000/watchkit/ios/apple/swift/2015/08/21/Debugging-WatchKit-iOS-handoff.html</link>
+        <guid isPermaLink="true">http://localhost:4000/watchkit/ios/apple/swift/2015/08/21/Debugging-WatchKit-iOS-handoff.html</guid>
+        
+        
+        <category>WatchKit</category>
+        
+        <category>iOS</category>
+        
+        <category>Apple</category>
+        
+        <category>Swift</category>
+        
+      </item>
+    
+      <item>
+        <title>Debugging Apple WatchKit 'Error Code=2'</title>
+        <description>&lt;p&gt;I recently built an Apple &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app for my company &lt;a href=&quot;http://www.fooda.com&quot;&gt;Fooda&lt;/a&gt;.  The app allows our
+customers to track their food delivery once they’ve placed an order.  Our app, like most apps
+needed to ask our iOS app to make a remote http call to our api to retrieve the necessary info
+to display the data.&lt;/p&gt;
+
+&lt;p&gt;Given almost all Watchkit apps will need to do exactly this, it should have been a walk in the park
+that is thoroughly documented by &lt;a href=&quot;http://developer.apple.com&quot;&gt;Apple&lt;/a&gt;.  However, I discovered this is in fact not the case
+and if this is your first time building a &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app, it’s ultimately simple with a few gotchas.&lt;/p&gt;
+
+&lt;p&gt;Yet, despite this being a core task of almost every app, it’s easy to go astray and end up with errors.  Specifically the &lt;code&gt;Domain=com.apple.watchkit.errors Code=2&lt;/code&gt; error.  This post will help you diagnose adn avoid it.&lt;/p&gt;
+
+&lt;h1 id=&quot;error-domaincomapplewatchkiterrors-code2&quot;&gt;Error Domain=com.apple.watchkit.errors Code=2&lt;/h1&gt;
+&lt;p&gt;If you run into any kind of trouble that’s going to make you pull your hair out, it’s this error.  Your
+&lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app is going to receive this error if your iOS app fails to communicate with it properly.  Specifically, it has failed to call the &lt;code&gt;reply&lt;/code&gt; closure handed to it from the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app.&lt;/p&gt;
+
+&lt;p&gt;This you’ll find out can happen for many reasons.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Your iOS app crashed handling the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; request&lt;/li&gt;
+  &lt;li&gt;You are passing in-compatable datatypes back to the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app&lt;/li&gt;
+  &lt;li&gt;Your app is marked as unable to run in the background&lt;/li&gt;
+  &lt;li&gt;You fail to respond to the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app&lt;/li&gt;
+  &lt;li&gt;You fail to respond to the &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app quickly&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Each of these errors are easy to prevent, but utltimately not documented in any one single place.&lt;/p&gt;
+
+&lt;h1 id=&quot;making-a-call-from-watchkit-to-your-ios-app&quot;&gt;Making a call from Watchkit to your iOS app&lt;/h1&gt;
+&lt;p&gt;To communicate with your iOS app from your &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app, you are going to do so through the
+&lt;code&gt;WKInterfaceController&lt;/code&gt;.  This function allows you to package up a request in the form of a dictionary and
+a closure that is passed to your iOS app.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;kc&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+     &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;request&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;glance_data&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+     &lt;span class=&quot;n&quot;&gt;WKInterfaceController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;openParentApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+
+     &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This is the simple part, and shouldn’t cause too many issues.  However, it’s making sure you properly reply to your &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; that will determine if you receive the &lt;code&gt;Domain=com.apple.watchkit.errors Code=2&lt;/code&gt; error or not.&lt;/p&gt;
+
+&lt;h1 id=&quot;make-sure-your-app-can-run-in-the-background&quot;&gt;Make sure your app can run in the background&lt;/h1&gt;
+&lt;p&gt;This shouldn’t be an issue, as most apps out of the box are allowed to do this.  However, if for somereason your app is set to prevent background processing, this will result in your &lt;code&gt;WKInterfaceController&lt;/code&gt; receiving the &lt;code&gt;Domain=com.apple.watchkit.errors Code=2&lt;/code&gt; error.&lt;/p&gt;
+
+&lt;p&gt;To verify this, in your &lt;code&gt;targets&lt;/code&gt; &lt;code&gt;plist&lt;/code&gt; make sure &lt;code&gt;Application does not run in background&lt;/code&gt; is set to &lt;code&gt;NO&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;add-the-handlewatchkitextensionrequest-in-your-appdelegate&quot;&gt;Add the handleWatchKitExtensionRequest in your AppDelegate&lt;/h1&gt;
+&lt;p&gt;Implement the &lt;code&gt;handleWatchKitExtensionRequest&lt;/code&gt; method in your &lt;code&gt;AppDelegate&lt;/code&gt;.  This method handles all requests from your &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app.  If you haven’t implemented this method on your iOS apps AppDelegate your &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; will receive the &lt;code&gt;Domain=com.apple.watchkit.errors Code=2&lt;/code&gt; error.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handleWatchKitExtensionRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]?,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(([&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;//Handle the WatchKit request here&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;#Always call the reply closure
+Ultimately, the reason your &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app is receiving the &lt;code&gt;Domain=com.apple.watchkit.errors Code=2&lt;/code&gt; error is because you failed to call the &lt;code&gt;reply&lt;/code&gt; closure.  So, no matter what happens, ensure you invoke the &lt;code&gt;reply&lt;/code&gt; closure.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handleWatchKitExtensionRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]?,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(([&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;response&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;status&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;data&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hello world&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;running-in-the-background&quot;&gt;Running in the background&lt;/h1&gt;
+&lt;p&gt;If your Watch user is glancing at their watch, most likely they aren’t also looking at your iOS app.  That means your iOS app just woke up in the background, and needs to register to run in the background.  If not, iOS will most likely terminate your app before you can invoke the &lt;code&gt;reply&lt;/code&gt; closure.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handleWatchKitExtensionRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]?,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(([&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;backgroundProcessingToken&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beginBackgroundTaskWithName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;backgroundApiCall&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expirationHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;response&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;status&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;data&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;BACKGROUND_JOB_EXPIRED__OH_NO&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;response&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;status&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;success&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;data&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;hello world&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endBackgroundTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;backgroundProcessingToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;This becomes even more important if you are making an API call which can take a material amount of time.&lt;/p&gt;
+
+&lt;h1 id=&quot;bringing-it-all-together&quot;&gt;Bringing it all together&lt;/h1&gt;
+&lt;p&gt;Here’s an example pulling all the components together between a &lt;a href=&quot;http://developer.apple.com/watchkit/&quot;&gt;WatchKit&lt;/a&gt; app and it’s corresponding iOS app.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+     &lt;span class=&quot;kc&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;awakeWithContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+     &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;request&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;request&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;glance_data&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+     &lt;span class=&quot;n&quot;&gt;WKInterfaceController&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;openParentApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+       &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+         &lt;span class=&quot;c1&quot;&gt;//Yeah, you have a response of some sorts from your iOS app.  &lt;/span&gt;
+       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+     &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Here’s the iOS &lt;code&gt;AppDelegate&lt;/code&gt; &lt;code&gt;handleWatchKitExtensionRequest&lt;/code&gt; implementation&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-swift&quot; data-lang=&quot;swift&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;UIApplication&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;handleWatchKitExtensionRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;userInfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]?,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(([&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;NSObject&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;AnyObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;backgroundProcessingToken&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;beginBackgroundTaskWithName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;backgroundApiCall&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;expirationHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Void&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;response&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOME_ERROR_CODE_INDICATING_TIMEOUT&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+
+    &lt;span class=&quot;n&quot;&gt;Alamofire&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;https://api.forecast.io/forecast/[INSERT DARK SKY API CODE]/37.8267,-122.423&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;responseJSON&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NSJSONReadingOptions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AllowFragments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;completionHandler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;error&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;nil&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;response&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;SOME_ERROR_CODE_INDICATING_FAILURE&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;reply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;response&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;status&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;error&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;data&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]])&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endBackgroundTask&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;backgroundProcessingToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Sun, 16 Aug 2015 16:11:51 -0500</pubDate>
+        <link>http://localhost:4000/watchkit/ios/apple/swift/api/2015/08/16/Debugging-Apple-WatchKit-Error-Code=2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/watchkit/ios/apple/swift/api/2015/08/16/Debugging-Apple-WatchKit-Error-Code=2.html</guid>
+        
+        <category>WatchKit</category>
+        
+        <category>iOS</category>
+        
+        <category>Apple</category>
+        
+        <category>Swift</category>
+        
+        
+        <category>WatchKit</category>
+        
+        <category>iOS</category>
+        
+        <category>Apple</category>
+        
+        <category>Swift</category>
+        
+        <category>API</category>
+        
+      </item>
+    
+      <item>
+        <title>A better way to Arduino!</title>
+        <description>&lt;p&gt;I’ve been tinkering with a few &lt;a href=&quot;http://arduino.cc/&quot;&gt;Arduino&lt;/a&gt; setups for a while now, most recently their &lt;a href=&quot;http://arduino.cc/en/main/robot&quot;&gt;robotics kit&lt;/a&gt;.  Through this exploration I’ve really enjoyed getting closer to the hardware again. I find something romantic about robots and electrical engineering.&lt;/p&gt;
+
+&lt;p&gt;The only frustration I’ve had to date is the tools surrounding the Arduino space. They’ve met their goal by keeping it simple enough anyone within the artist, design, or finance worlds could become a hobbyist roboticist.  However, their goal left me wanting a more “developer” focused development environment, even when teaching my daughter everything I’m learning along the way.&lt;/p&gt;
+
+&lt;p&gt;Enter artoo.io as a tool that takes more powerful languages, syntaxes, and grammars and gives you access to many robotics kits, Arduino one of them.  I’m not much relived to know I can hack Arduino in Ruby &amp;amp;&amp;amp; Go going forward.&lt;/p&gt;
+
+&lt;p&gt;You an find my emerging code on my github page, here.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 15 Aug 2015 16:11:51 -0500</pubDate>
+        <link>http://localhost:4000/arduino/robotics/microbot/go/rust/node/2015/08/15/a-better-way-to-arduino.html</link>
+        <guid isPermaLink="true">http://localhost:4000/arduino/robotics/microbot/go/rust/node/2015/08/15/a-better-way-to-arduino.html</guid>
+        
+        
+        <category>Arduino</category>
+        
+        <category>Robotics</category>
+        
+        <category>Microbot</category>
+        
+        <category>Go</category>
+        
+        <category>Rust</category>
+        
+        <category>Node</category>
+        
+      </item>
+    
+      <item>
+        <title>Talk - Intro to Rust programming</title>
+        <description>&lt;p&gt;I’ve been exploring &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half and have really falling in love.  It’s a tremendous language that has a lot of potential for both junior and experienced teams.&lt;/p&gt;
+
+&lt;p&gt;This talk introduces the fundamentals of &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; for both junior and senior technologists who want to learn more about &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;&lt;/p&gt;
+
+&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/MPbeqRLITALWNV&quot; width=&quot;100%&quot; height=&quot;355&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:5px&quot;&gt; &lt;/div&gt;
+
+</description>
+        <pubDate>Wed, 01 Jul 2015 16:00:00 -0500</pubDate>
+        <link>http://localhost:4000/talks/2015/07/01/Talk-Intro-to-Rust-programming.html</link>
+        <guid isPermaLink="true">http://localhost:4000/talks/2015/07/01/Talk-Intro-to-Rust-programming.html</guid>
+        
+        
+        <category>talks</category>
+        
+      </item>
+    
+  </channel>
+</rss>

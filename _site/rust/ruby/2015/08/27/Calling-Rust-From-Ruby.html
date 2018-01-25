@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calling Rust from Ruby</title>
+  <meta name="description" content="I’ve falling in love with Rust over the last year and a half.  I like itfor a lot of reasons, a few being the compiler, seperation of noun/verb,and it’s deep...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/rust/ruby/2015/08/27/Calling-Rust-From-Ruby.html">
+  <link rel="alternate" type="application/rss+xml" title="Anthony Broad-Crawford" href="http://localhost:4000/feed.xml" />
+  <link rel="shortcut icon" type="image/png" href="http://localhost:4000/assets/images/favicon.png">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Anthony Broad-Crawford</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <a class="page-link" href="/talks/">Talks</a>
+        <a class="page-link" href="/CV/">CV</a>
+        <a class="page-link" href="/bio/">Bio</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Calling Rust from Ruby</h1>
+    <p class="post-meta">Aug 27, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>I’ve falling in love with <a href="https://www.rust-lang.org">Rust</a> over the last year and a half.  I like it
+for a lot of reasons, a few being the compiler, seperation of noun/verb,
+and it’s deeply integrated testing.   However, recently been thinking through ways
+to introduce it to the team and the technology portfolio at <a href="http://www.fooda.com">Fooda</a>.</p>
+
+<p>One idea we had, was move some of our computational intensive tasks to <a href="https://www.rust-lang.org">Rust</a>
+given that is one of it’s “sweet spots” as a technology.  However, this left us wondering
+how exactly would we mix it in with Ruby.  Specifically, how do we call <a href="https://www.rust-lang.org">Rust</a>
+from within Ruby.</p>
+
+<p>As it turns out, it’s actually fairly easy to call <a href="https://www.rust-lang.org">Rust</a> from within Ruby
+so long as you understand a few simple things, namely</p>
+
+<ul>
+  <li>Rust</li>
+  <li>C and ABI</li>
+  <li>FFI</li>
+</ul>
+
+<p>With those, and a few lines of code to begin calling Rust from within your Ruby code.</p>
+
+<h1 id="preparing-rust-to-be-callable-from-ruby">Preparing Rust to be “callable” from Ruby</h1>
+<p>Ultimately, you don’t need to do a whole lot to make your <a href="https://www.rust-lang.org">Rust</a> code available to C.<br />
+In fact, here’s a simple <code>hello world</code> example.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/e3e99f733add2830f89a.js"> </script>
+
+<p>With the code snippet above, you’ll see a couple things different from your typical
+<a href="https://www.rust-lang.org">Rust</a> function.  So lets break it down …</p>
+
+<ul>
+  <li><code>#[no_mangle]</code>  This tells the <a href="https://www.rust-lang.org">Rust</a> compiler to expose this a global function
+and don’t mangle it with an internal name</li>
+  <li><code>extern "C"</code> This exposes the function as if it was a <code>C</code> function via the <code>C ABI</code></li>
+  <li><code>*const libc::c_char</code> Our function returns a <code>C</code> “string”</li>
+</ul>
+
+<p>Outside that, our function is a regular <a href="https://www.rust-lang.org">Rust</a> function that does it’s thing.</p>
+
+<h1 id="compile-in-a-slightly-different-way">Compile in a slightly different way</h1>
+<p>Now that your <a href="https://www.rust-lang.org">Rust</a> code is exposed prepared properly, we need to ensure
+we compile in a manner Ruby can accept, specifically a dynamic library. You can do this two ways, the command line or a Cargo toml file.  I’m doing it
+through Cargo and a <code>toml</code> file below</p>
+
+<figure class="highlight"><pre><code class="language-toml" data-lang="toml"><span></span><span class="p">[</span><span class="n">package</span><span class="p">]</span>
+<span class="n">name</span> <span class="o">=</span> <span class="s">&quot;library&quot;</span>
+<span class="n">version</span> <span class="o">=</span> <span class="s">&quot;0.1.0&quot;</span>
+<span class="n">authors</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;Anthony Broad-Crawford &lt;anthony@anthonybroadcrawford.com&gt;&quot;</span><span class="p">]</span>
+
+<span class="p">[</span><span class="n">lib</span><span class="p">]</span>
+<span class="n">crate-type</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;dylib&quot;</span><span class="p">]</span>
+
+<span class="p">[</span><span class="n">dependencies</span><span class="p">]</span>
+<span class="n">libc</span> <span class="o">=</span> <span class="s">&quot;0.1.10&quot;</span></code></pre></figure>
+
+<p>When you execute <code>Cargo build</code> you will now have a dynamic library <code>.dylib</code> in your
+targets folder.</p>
+
+<h1 id="including-your-rust-library-in-ruby">Including your Rust library in Ruby</h1>
+<p>If there’s an icky part to this whole process, this is it right here.  You’ll need a one-to-one
+mapping of the functionality you expose in your <a href="https://www.rust-lang.org">Rust</a> dynamic library to your <code>Ruby</code> application.</p>
+
+<p>Here’s an example of how this is done leveraging <code>ffi</code></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span></span><span class="nb">require</span> <span class="s1">&#39;ffi&#39;</span>
+
+<span class="k">module</span> <span class="nn">Rust</span>
+  <span class="kp">extend</span> <span class="no">FFI</span><span class="o">::</span><span class="no">Library</span>
+  <span class="n">ffi_lib</span> <span class="s1">&#39;../rust-library/target/debug/liblibrary.dylib&#39;</span>
+
+  <span class="n">attach_function</span> <span class="ss">:hello_world</span><span class="p">,</span> <span class="o">[]</span><span class="p">,</span> <span class="ss">:string</span>
+<span class="k">end</span></code></pre></figure>
+
+<p>Please note, the <code>path</code> reference above in the <code>ffi_lib</code> method call is specific to a sample project I’ve
+included below.</p>
+
+<h1 id="test-drive-in-irb">Test drive in IRB</h1>
+<p>At this point you are able to take it for a test drive in irb.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span></span>ABC-194:rust-library anthony$ Cargo build
+   Compiling libc v0.1.10
+   Compiling library v0.1.0 <span class="o">(</span>file:///Users/anthony/example_rust_called_from_ruby/rust-library<span class="o">)</span>
+ABC-194:rust-library anthony$ <span class="nb">cd</span> ..
+ABC-194:example_rust_called_from_ruby anthony$ ls
+.            ..           .git         ruby-library rust-library
+ABC-194:example_rust_called_from_ruby anthony$ <span class="nb">cd</span> ruby-library/
+ABC-194:ruby-library anthony$ ls
+.              ..             ruby-client.rb
+ABC-194:ruby-library anthony$ irb
+<span class="m">2</span>.0.0-p247 :001 &gt; require <span class="s2">&quot;./ruby-client&quot;</span>
+ <span class="o">=</span>&gt; <span class="nb">true</span>
+<span class="m">2</span>.0.0-p247 :002 &gt; Rust::hello_world
+ <span class="o">=</span>&gt; <span class="s2">&quot;hello world&quot;</span>
+<span class="m">2</span>.0.0-p247 :003 &gt;</code></pre></figure>
+
+<p>That’s it.  I was incredibly surprised at how easy it was.  The only thing I don’t like,
+is maintaining that one-to-one mapping in via <code>ffi</code> in Ruby.  A small price to pay, I guess.</p>
+
+<h1 id="complete-working-example">Complete working example</h1>
+<p>I’ve put together a complete working example that will allow you from irb to call into
+a <a href="https://www.rust-lang.org">Rust</a> module.  It’s a <code>hello world</code> but it works.</p>
+
+<p>It’s found <a href="https://github.com/AnthonyBroadCrawford/example_rust_called_from_ruby">here</a></p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Anthony Broad-Crawford</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Anthony Broad-Crawford</li>
+          <li><a href="mailto:abc@anthonybroadcrawford.com">abc@anthonybroadcrawford.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/broadcrawford">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">broadcrawford</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/broadcrawford">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">broadcrawford</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">A maker and a builder who believes you should never stop learning.  I am a CTO, CPO, & CEO in the mobile & healthcare markets.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21851573-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+  </body>
+
+</html>
