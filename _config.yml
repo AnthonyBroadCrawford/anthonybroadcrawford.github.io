@@ -14,5 +14,8 @@ highlighter: pygments
 # Build settings
 markdown: kramdown
 
+#pagination settings
+paginate: 7 #based on me viewing my site on my MacBook Pro 13"
+
 #other gems
-gems: [jekyll-gist, pygments.rb]
+plugins: [jekyll-gist, pygments.rb, jekyll-paginate]
