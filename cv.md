@@ -17,7 +17,31 @@ Below you will find a detailed history of my work over the last fifteen years.  
 <br/>
 
 # Chief Product Officer, SpotHero, December 2015 - Present
-Responsible for all Product, User Experience/Design, and DataSciences.  This includes strategy, execution, and teams. 
+Member of the executive team, responsible for Product, Design, and Data Science.
+
+- Established company vision & 3 year product roadmap transitioning SpotHero to automobile & autonomous vehicle vertical, delivered early and under budget
+
+- Transitioned SpotHero to a technology led company by growing the Product, Engineering, & Designs organizations from of 6 to 70+; recruited nationally recognized senior talent balanced with exceptional junior talent
+
+- Led and grew strategic partnerships with Apple & Google resulting in multiple strategic initiatives adding millions in incremental revenue & positioning SpotHero as category leader prime for acquisition
+
+- Started Data Science practice resulting in multiple products contributing millions in incremental revenue & cost savings per year
+
+- Partnered with Google to launch first of it’s kind Google Assistant Product, debuted at CES expanding SpotHero to hundreds of millions handhelds, households, and cars worldwide
+
+- Capitalized on underserved Business Travelers segment, brought new product to market adding millions in incremental revenue per year on time and under budget
+
+- Improved conversion across all platforms through design and product enhancements.  Android up to 22% from 2%,  iOS up to 29% from 9%, web up to 19% from 6%
+
+- Products launched received multiple industry awards for excellence from industry partners, segment partners, Google, Apple, & more 
+
+- Launched HeroConnect product (developer API) that distributed SpotHero into top brands including Hertz, Apple, Google, & top automobile brands 
+
+- Led complete iOS and Android app redesign, resulted in increased conversion, decreased call center volume, and consideration for design awards from Apple & Google
+
+- Partnered with Apple & Google to release cutting edge product enhancements debuting on stage at Apple WWDC & Google I/O events with hundreds of follow on promotional events resulting in hundreds of thousands of incremental app downloads 
+
+- Delivered several segment focused product launches in for Airport, Monthly, & Event parking users.  Project was delivered early, under budget, and exceeded plan for incremental revenue contribution ahead of schedule
 
 # Chief Technology Officer, Fooda; December 2013 - December 2015
 Responsible for all Product, User Experience/Design, and Technology strategy, execution, and teams.
