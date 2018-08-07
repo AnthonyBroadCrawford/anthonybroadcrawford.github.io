@@ -58,7 +58,7 @@
     <p>I recently built an Apple iOS <a href="http://developer.apple.com/watchkit/">WatchKit</a> app and part of that was improving
 the user experience by leveraging Apple’s <a href="https://developer.apple.com/handoff/">Handoff</a> technology.</p>
 
-<p>As seems to be the <code>pattern</code> lately with <a href="http://developer.apple.com">Apple’s</a> <a href="http://developer.apple.com/watchkit/">WatchKit</a> documentation, this turned
+<p>As seems to be the <code class="highlighter-rouge">pattern</code> lately with <a href="http://developer.apple.com">Apple’s</a> <a href="http://developer.apple.com/watchkit/">WatchKit</a> documentation, this turned
 out to take a few hours longer than it should have.</p>
 
 <p>If you are trying to enable <a href="http://developer.apple.com">Apple’s</a> <a href="https://developer.apple.com/handoff/">Handoff</a> and it isn’t working, it’s most
@@ -77,9 +77,9 @@ likely because one of the three steps below wasn’t completed.</p>
 
 <h1 id="declaring-activities">Declaring activities</h1>
 <p>Ultimately, not just “anything” can be handed off to your iOS app.  In order to get the hand off
-icon to appear on the iOS app, your iOS app must <code>declare</code> which <code>activities</code> it can handle.</p>
+icon to appear on the iOS app, your iOS app must <code class="highlighter-rouge">declare</code> which <code class="highlighter-rouge">activities</code> it can handle.</p>
 
-<p>To declare activities, you add the <code>NSUserActivityTypes</code> key to your apps plist file as an array,
+<p>To declare activities, you add the <code class="highlighter-rouge">NSUserActivityTypes</code> key to your apps plist file as an array,
 and then give meaningful names to the activities your app can handle.</p>
 
 <p><img src="http://localhost:4000/assets/images/Debugging-WatchKit-iOS-handoff/NSUserActivityTypes-info.plist.png" alt="NSUserActivityTypes Screenshot" /></p>
@@ -92,30 +92,30 @@ and nothing more.  So name them whatever makes the most sense to your app and th
 <p>In our <a href="http://developer.apple.com/watchkit/">WatchKit</a> example below, when a customer slides up the <a href="http://developer.apple.com/watchkit/">WatchKit</a>
 app’s Glance, we are going to initiate a hand off to iOS</p>
 
-<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span></span><span class="kr">override</span> <span class="kd">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">:</span> <span class="nb">AnyObject</span><span class="p">?)</span> <span class="p">{</span>
-  <span class="kc">super</span><span class="p">.</span><span class="n">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">override</span> <span class="kd">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span> <span class="p">{</span>
+  <span class="k">super</span><span class="o">.</span><span class="nf">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 
-  <span class="kd">let</span> <span class="nv">userInfo</span> <span class="p">:</span> <span class="p">[</span><span class="bp">NSObject</span><span class="p">:</span><span class="nb">AnyObject</span><span class="p">]</span> <span class="p">=</span> <span class="p">[</span><span class="s">&quot;handoff_activity&quot;</span><span class="p">:</span><span class="s">&quot;login&quot;</span><span class="p">]</span>
+  <span class="k">let</span> <span class="nv">userInfo</span> <span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span><span class="p">:</span><span class="kt">AnyObject</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"handoff_activity"</span><span class="p">:</span><span class="s">"login"</span><span class="p">]</span>
 
-  <span class="n">updateUserActivity</span><span class="p">(</span><span class="s">&quot;com.YourApp.YourDomain.loginHandoffAcivity&quot;</span><span class="p">,</span>
-    <span class="n">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">,</span>
-    <span class="n">webpageURL</span><span class="p">:</span> <span class="kc">nil</span>
+  <span class="nf">updateUserActivity</span><span class="p">(</span><span class="s">"com.YourApp.YourDomain.loginHandoffAcivity"</span><span class="p">,</span>
+    <span class="nv">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">,</span>
+    <span class="nv">webpageURL</span><span class="p">:</span> <span class="kc">nil</span>
   <span class="p">)</span>
 <span class="p">}</span></code></pre></figure>
 
 <p>At this point, <a href="https://developer.apple.com/handoff/">Handoff</a> still won’t work, as we haven’t “caught” the
-<code>activity</code> handed to our iOS app.  However, this completes the<code>request</code> to
+<code class="highlighter-rouge">activity</code> handed to our iOS app.  However, this completes the<code class="highlighter-rouge">request</code> to
 <a href="https://developer.apple.com/handoff/">Handoff</a> from the <a href="http://developer.apple.com/watchkit/">WatchKit</a> app.</p>
 
 <h1 id="preparing-your-app-for-ios-handoff">Preparing your app for iOS Handoff</h1>
-<p>First you need to update your iOS app <code>AppDelegate</code>.  Specifically, you will need to add the <code>continueUserActivity</code> method.</p>
+<p>First you need to update your iOS app <code class="highlighter-rouge">AppDelegate</code>.  Specifically, you will need to add the <code class="highlighter-rouge">continueUserActivity</code> method.</p>
 
-<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span></span><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">application</span><span class="p">:</span> <span class="bp">UIApplication</span><span class="p">,</span> <span class="n">continueUserActivity</span> <span class="n">userActivity</span><span class="p">:</span> <span class="bp">NSUserActivity</span><span class="p">,</span> <span class="n">restorationHandler</span><span class="p">:</span> <span class="p">([</span><span class="nb">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Void</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Bool</span> <span class="p">{</span>
-    <span class="n">restorationHandler</span><span class="p">([</span><span class="kc">self</span><span class="p">.</span><span class="n">window</span><span class="p">!.</span><span class="n">rootViewController</span><span class="p">!])</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">continueUserActivity</span> <span class="nv">userActivity</span><span class="p">:</span> <span class="kt">NSUserActivity</span><span class="p">,</span> <span class="nv">restorationHandler</span><span class="p">:</span> <span class="p">([</span><span class="kt">AnyObject</span><span class="p">]</span><span class="o">!</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+    <span class="nf">restorationHandler</span><span class="p">([</span><span class="k">self</span><span class="o">.</span><span class="n">window</span><span class="o">!.</span><span class="n">rootViewController</span><span class="o">!</span><span class="p">])</span>
     <span class="k">return</span> <span class="kc">true</span>
 <span class="p">}</span></code></pre></figure>
 
-<p>There are a few things in the above code snippet to notice, specifically the call to <code>restorationHandler</code>.  The <code>restorationHandler</code> closure is the final step to make the <a href="https://developer.apple.com/handoff/">Handoff</a> icon appear
+<p>There are a few things in the above code snippet to notice, specifically the call to <code class="highlighter-rouge">restorationHandler</code>.  The <code class="highlighter-rouge">restorationHandler</code> closure is the final step to make the <a href="https://developer.apple.com/handoff/">Handoff</a> icon appear
 on the iPhone’s lock screen.</p>
 
 <h1 id="bringing-it-all-together">Bringing it all together</h1>
@@ -123,27 +123,27 @@ on the iPhone’s lock screen.</p>
 <p>These have been trivial examples, so ultimately you’re most likely going to do something like
 the following</p>
 
-<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span></span><span class="kr">override</span> <span class="kd">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">:</span> <span class="nb">AnyObject</span><span class="p">?)</span> <span class="p">{</span>
-  <span class="kc">super</span><span class="p">.</span><span class="n">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="k">override</span> <span class="kd">func</span> <span class="nf">awakeWithContext</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">AnyObject</span><span class="p">?)</span> <span class="p">{</span>
+  <span class="k">super</span><span class="o">.</span><span class="nf">awakeWithContext</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
 
-  <span class="kd">let</span> <span class="nv">request</span> <span class="p">:</span> <span class="p">[</span><span class="bp">NSObject</span><span class="p">:</span><span class="nb">AnyObject</span><span class="p">]</span> <span class="p">=</span> <span class="p">[</span><span class="s">&quot;request&quot;</span><span class="p">:</span><span class="s">&quot;user_logged_in&quot;</span><span class="p">]</span>
+  <span class="k">let</span> <span class="nv">request</span> <span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span><span class="p">:</span><span class="kt">AnyObject</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"request"</span><span class="p">:</span><span class="s">"user_logged_in"</span><span class="p">]</span>
 
   <span class="c1">//Send a request to your iOS app, most likely to fetch some remote data</span>
-  <span class="n">WKInterfaceController</span><span class="p">.</span><span class="n">openParentApplication</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">reply</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="p">-&gt;</span> <span class="nb">Void</span> <span class="k">in</span>
-    <span class="c1">//This is a hackish simplified short hand, you&#39;ll need to verify the response in the reply hash and parse out if the user has logged in</span>
-    <span class="kd">let</span> <span class="nv">user_logged_in</span> <span class="p">=</span> <span class="n">reply</span><span class="p">[</span><span class="s">&quot;response&quot;</span><span class="p">]</span>
+  <span class="kt">WKInterfaceController</span><span class="o">.</span><span class="nf">openParentApplication</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="nv">reply</span><span class="p">:</span> <span class="p">{</span> <span class="p">(</span><span class="n">reply</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+    <span class="c1">//This is a hackish simplified short hand, you'll need to verify the response in the reply hash and parse out if the user has logged in</span>
+    <span class="k">let</span> <span class="nv">user_logged_in</span> <span class="o">=</span> <span class="n">reply</span><span class="p">[</span><span class="s">"response"</span><span class="p">]</span>
 
-    <span class="k">if</span><span class="p">(</span><span class="n">user_logged_in</span> <span class="p">==</span> <span class="kc">false</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">user_logged_in</span> <span class="o">==</span> <span class="kc">false</span><span class="p">){</span>
       <span class="c1">//you can populate this hash with any relevant handoff or user data</span>
-      <span class="kd">let</span> <span class="nv">userInfo</span> <span class="p">:</span> <span class="p">[</span><span class="bp">NSObject</span><span class="p">:</span><span class="nb">AnyObject</span><span class="p">]</span> <span class="p">=</span> <span class="p">[</span><span class="s">&quot;handoff_activity&quot;</span><span class="p">:</span><span class="s">&quot;login&quot;</span><span class="p">]</span>
+      <span class="k">let</span> <span class="nv">userInfo</span> <span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span><span class="p">:</span><span class="kt">AnyObject</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"handoff_activity"</span><span class="p">:</span><span class="s">"login"</span><span class="p">]</span>
 
-      <span class="n">updateUserActivity</span><span class="p">(</span><span class="s">&quot;com.YourApp.YourDomain.loginHandoffAcivity&quot;</span><span class="p">,</span>
-        <span class="n">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">,</span>
-        <span class="n">webpageURL</span><span class="p">:</span> <span class="kc">nil</span>
+      <span class="nf">updateUserActivity</span><span class="p">(</span><span class="s">"com.YourApp.YourDomain.loginHandoffAcivity"</span><span class="p">,</span>
+        <span class="nv">userInfo</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">,</span>
+        <span class="nv">webpageURL</span><span class="p">:</span> <span class="kc">nil</span>
       <span class="p">)</span>
 
       <span class="c1">//inform the user on your Glance UI that they need to log</span>
-      <span class="n">some_func_to_display_the_login_ui_vs_the_normal_ui</span><span class="p">()</span>
+      <span class="nf">some_func_to_display_the_login_ui_vs_the_normal_ui</span><span class="p">()</span>
     <span class="p">}</span>
   <span class="p">})</span>
 <span class="p">}</span></code></pre></figure>

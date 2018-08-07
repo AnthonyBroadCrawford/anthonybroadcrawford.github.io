@@ -9,7 +9,7 @@ twitter_username: broadcrawford
 github_username:  broadcrawford
 
 #syntax highlighting
-highlighter: pygments
+highlighter: rouge
 
 # Build settings
 markdown: kramdown
