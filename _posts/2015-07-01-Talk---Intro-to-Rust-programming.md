@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Talk - Intro to Rust programming"
+title:  "Intro to Rust programming"
 date:   2015-07-01 21:00:00
 categories: talks
 ---

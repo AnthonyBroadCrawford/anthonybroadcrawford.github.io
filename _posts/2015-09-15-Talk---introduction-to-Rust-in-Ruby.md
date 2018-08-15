@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Talk - Introducing Rust to Ruby"
+title:  "Introducing Rust to Ruby"
 date:   2015-09-15 21:00:00
 categories: talks
 ---

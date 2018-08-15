@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Talk - High performance Ruby with Rust"
+title:  "High performance Ruby with Rust"
 date:   2015-09-22 24:00:00
 categories: talks
 ---

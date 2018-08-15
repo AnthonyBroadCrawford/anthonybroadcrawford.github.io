@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Talk - Release faster with design sprints"
+title:  "Release faster with design sprints"
 date:   2015-06-1 21:00:00
 categories: talks
 ---

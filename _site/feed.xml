@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Aug 2018 13:12:15 -0500</pubDate>
-    <lastBuildDate>Wed, 15 Aug 2018 13:12:15 -0500</lastBuildDate>
+    <pubDate>Wed, 15 Aug 2018 13:20:40 -0500</pubDate>
+    <lastBuildDate>Wed, 15 Aug 2018 13:20:40 -0500</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -214,7 +214,7 @@ I previously kept my habit of getting up early in the morning and reducing almos
       </item>
     
       <item>
-        <title>Talk - High performance Ruby with Rust</title>
+        <title>High performance Ruby with Rust</title>
         <description>&lt;p&gt;I’ve been exploring &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half with one big question on my mind, how do I integrate &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; into an existing codebase.&lt;/p&gt;
 
 &lt;p&gt;Taking a high performance language like &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; and pairing it with &lt;a href=&quot;http://www.rails.org&quot;&gt;Rails&lt;/a&gt;, a technology built for rapid feature development, would give a technology team the best of both worlds.&lt;/p&gt;
@@ -258,7 +258,7 @@ I previously kept my habit of getting up early in the morning and reducing almos
       </item>
     
       <item>
-        <title>Talk - Introducing Rust to Ruby</title>
+        <title>Introducing Rust to Ruby</title>
         <description>&lt;p&gt;I’ve been exploring &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; over the last year and a half with one big question on my mind, how do I integrate &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; into an existing codebase.  At &lt;a href=&quot;www.fooda.com&quot;&gt;Fooda&lt;/a&gt; that’s a Rails application.&lt;/p&gt;
 
 &lt;p&gt;This talk introduces the fundamental components to leveraging &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; from within a &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; application like &lt;a href=&quot;http://www.rails.org&quot;&gt;Rails&lt;/a&gt;&lt;/p&gt;
