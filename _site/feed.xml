@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Aug 2018 09:11:02 -0500</pubDate>
-    <lastBuildDate>Mon, 13 Aug 2018 09:11:02 -0500</lastBuildDate>
+    <pubDate>Wed, 15 Aug 2018 12:16:15 -0500</pubDate>
+    <lastBuildDate>Wed, 15 Aug 2018 12:16:15 -0500</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -36,6 +36,56 @@
         <pubDate>Wed, 01 Aug 2018 19:00:00 -0500</pubDate>
         <link>http://localhost:4000/2018/08/01/what-comes-next.html</link>
         <guid isPermaLink="true">http://localhost:4000/2018/08/01/what-comes-next.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>The best way to let someone go</title>
+        <description>&lt;p&gt;&lt;em&gt;This is a cross-post from the &lt;a href=&quot;www.thewatercooler.io&quot;&gt;Water Cooler&lt;/a&gt; leadership forum.  A forum for technology executives to discuss the ins/outs of running fast growing/scaling companies.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is what I’ve found to be helpful at both fortune 500 &amp;amp; early stage companies.  However, I don’t claim this to be &lt;strong&gt;the best&lt;/strong&gt; way to let someone go.&lt;/p&gt;
+
+&lt;p&gt;Lastly, all of this assumes the termination is driven by performance vs. some other situational behavior that requires immediate termination (physical violence in the workplace, intimidation, intoxication, etc).  If the behavior requires instant dismisal, the below may not be the best approach.&lt;/p&gt;
+
+&lt;p&gt;Process I follow when having to let someone go&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;I always do it on a Friday. This gives them the weekend to cool off, process the news, etc. Also, any support group they have will most likely be available given it’s the weekend.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Always schedule it towards the end of the day on Friday, so if they choose to return to the office after being terminated almost everyone has gone home for the weekend
+Have both HR+legal in the room (if possible), if not, another member of management from anywhere in the org&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Schedule the meeting in a conference room away from their team and closest to exits if possible&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;While the meeting is happening have someone cleaning out their desk, disabling email/slack access, etc. When meeting is done their things should be handed to them and all access to anything company related should have been removed.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Opening sentence officially executing the termination should be delivered in 5 seconds or less. Be clear, be succinct, be direct. I’ve found simply stating, “Anthony, I’m letting you go effective immediately” is the only way to start this conversation.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Second sentence should articulate terms (severance, impact to equity, etc)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Final sentence should indicate this is non-negotiable&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At this point, I encourage the manager executing the termination leaves the room. Nothing of value to any party involved is gained by the manager staying and engaging in any type of “debate”. All questions from the employee should go to HR &amp;amp; legal in the room at that time.&lt;/p&gt;
+
+&lt;p&gt;After this meeting, call an ad-hoc meeting with the terminated employees immediate team and communicate the termination. Again, be clear and succinct. Allow for questions and answer in a transparent and respectful manner.&lt;/p&gt;
+
+&lt;p&gt;If the role/person warrants send an email to a broader audience communicating the termination. As always, be transparent as you can while also respecting the terminated employee.&lt;/p&gt;
+
+&lt;p&gt;Lastly, keep in mind this is another human being. Treat them how you yourself would want to be treated in these scenarios.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Jul 2018 19:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2018/07/30/the-best-way-to-let-someone-go.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/07/30/the-best-way-to-let-someone-go.html</guid>
         
         
       </item>
@@ -578,36 +628,6 @@ Ultimately, the reason your &lt;a href=&quot;http://developer.apple.com/watchkit
         <category>Swift</category>
         
         <category>API</category>
-        
-      </item>
-    
-      <item>
-        <title>A better way to Arduino!</title>
-        <description>&lt;p&gt;I’ve been tinkering with a few &lt;a href=&quot;http://arduino.cc/&quot;&gt;Arduino&lt;/a&gt; setups for a while now, most recently their &lt;a href=&quot;http://arduino.cc/en/main/robot&quot;&gt;robotics kit&lt;/a&gt;.  Through this exploration I’ve really enjoyed getting closer to the hardware again. I find something romantic about robots and electrical engineering.&lt;/p&gt;
-
-&lt;p&gt;The only frustration I’ve had to date is the tools surrounding the Arduino space. They’ve met their goal by keeping it simple enough anyone within the artist, design, or finance worlds could become a hobbyist roboticist.  However, their goal left me wanting a more “developer” focused development environment, even when teaching my daughter everything I’m learning along the way.&lt;/p&gt;
-
-&lt;p&gt;Enter artoo.io as a tool that takes more powerful languages, syntaxes, and grammars and gives you access to many robotics kits, Arduino one of them.  I’m not much relived to know I can hack Arduino in Ruby &amp;amp;&amp;amp; Go going forward.&lt;/p&gt;
-
-&lt;p&gt;You an find my emerging code on my github page, here.&lt;/p&gt;
-
-</description>
-        <pubDate>Sat, 15 Aug 2015 16:11:51 -0500</pubDate>
-        <link>http://localhost:4000/arduino/robotics/microbot/go/rust/node/2015/08/15/a-better-way-to-arduino.html</link>
-        <guid isPermaLink="true">http://localhost:4000/arduino/robotics/microbot/go/rust/node/2015/08/15/a-better-way-to-arduino.html</guid>
-        
-        
-        <category>Arduino</category>
-        
-        <category>Robotics</category>
-        
-        <category>Microbot</category>
-        
-        <category>Go</category>
-        
-        <category>Rust</category>
-        
-        <category>Node</category>
         
       </item>
     
