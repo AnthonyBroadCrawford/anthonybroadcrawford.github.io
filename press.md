@@ -24,6 +24,7 @@ I've been very fortunate to have been interviewed, quoted, cited, and more.  Som
 - [Announcing SpotHero & Google CES Product launch & partnership](https://www.parking.org/2018/01/29/member-news-spothero-announces-voice-activated-car-parking-reservations-via-google-assistant-android-auto/)
 - [Another announcement regarding SpotHero iOS app updates](https://www.benzinga.com/pressreleases/17/09/b10068289/spothero-updates-ios-app-with-first-of-kind-features-to-make-parking-f)
 - [Discussing SpotHero’s position as category leader in vocal e-commerce (Siri, Google Assistant, Bixbi, etc)](https://www.business2community.com/marketing/future-marketing-47-experts-share-2017-predictions-01723801)
+- [SpotHero for Business product wins "best in travel category" award](http://www.businesstravelnews.com/Technology/SpotHero-Wins-BTNs-2017-Innovator-Award)
 
 On joining [SpotHero](http://www.spothero.com)
 
