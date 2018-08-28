@@ -6,9 +6,54 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 21 Aug 2018 11:46:14 -0500</pubDate>
-    <lastBuildDate>Tue, 21 Aug 2018 11:46:14 -0500</lastBuildDate>
+    <pubDate>Tue, 28 Aug 2018 17:14:13 -0500</pubDate>
+    <lastBuildDate>Tue, 28 Aug 2018 17:14:13 -0500</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>RSpec color, where have you been?</title>
+        <description>&lt;p&gt;I’ve been using &lt;a href=&quot;https://www.rubyonrails.org&quot;&gt;Ruby on Rails&lt;/a&gt; for a long time.  I first adopted &lt;a href=&quot;https://www.rubyonrails.org&quot;&gt;Ruby on Rails&lt;/a&gt; back in 2008 when the &lt;a href=&quot;https://www.rubyonrails.org&quot;&gt;Rails&lt;/a&gt; team released their first public version, 0.8.  I remember being blown away at the time. I had just co-founded my first company &lt;a href=&quot;https://www.within3.com&quot;&gt;Within3&lt;/a&gt; and realized that Microsoft technologies were not going to be a good fit for us.  We prototyped a few things in Rails and never looked back.  However, it wasn’t just Rails that blew me away, I was also blown away by the available testing frameworks.&lt;/p&gt;
+
+&lt;p&gt;You see, I was very fortunate to have been personally mentored by &lt;a href=&quot;https://en.wikipedia.org/wiki/Robert_C._Martin&quot;&gt;Uncle Bob Martin&lt;/a&gt;, &lt;a href=&quot;https://www.linkedin.com/in/michaelfeathers/&quot;&gt;Michael Feathers&lt;/a&gt;, and a few of the other folks at Object Mentor when I was at &lt;a href=&quot;https://www.progressive.com&quot;&gt;Progressive Insurance&lt;/a&gt; around 2001.  Not only did they teach me agile, they taught me the values of &lt;a href=&quot;https://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;Test Driven Development&lt;/a&gt; and then &lt;a href=&quot;https://en.wikipedia.org/wiki/Behavior-driven_development&quot;&gt;Behavior Driven Development&lt;/a&gt;.  Both practices have had a big impact on how I develop systems.&lt;/p&gt;
+
+&lt;p&gt;The whole point of me writing any of this, is I just stumbled across a feature in &lt;a href=&quot;https://rspec.info&quot;&gt;RSpec&lt;/a&gt; that I previously hadn’t known existed.  It’s the following options when executing your test suite that has me excited&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rspec —color —format doc
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It’s nothing major, except that it outputs your tests execution results in a very expressive manner.  When coming up to speed on a new code base or re-familiarizing yourself with some of your old code, this could be a great way to understand the intended behaviors of the system.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;rspec —color —format doc
+
+SolidityKoans::Instructor 
+	When a course is  misconfigured 
+		Should raise an ConfigurationException
+		Should log to the debug log file 
+		Should inform the user about the error on STDOUT
+
+	When a course is properly configured 
+		Should execute the Solidity tests associated with that course 
+		Should parse output &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;compilation errors 
+		Should parse output &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;test &lt;/span&gt;results 
+		Should inform the user about any compilation errors
+		Should inform the user about any failing tests 
+
+
+Finished &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;0.0034 seconds &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;files took 0.28784 seconds to load&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+8 examples, 0 failures
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Give it a shot, I really like it!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 27 Aug 2018 19:00:00 -0500</pubDate>
+        <link>http://localhost:4000/2018/08/27/rspec-color-where-have-you-been.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/27/rspec-color-where-have-you-been.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>What comes next?</title>
@@ -393,51 +438,6 @@ a &lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt; module.  It
         <category>Rust</category>
         
         <category>Ruby</category>
-        
-      </item>
-    
-      <item>
-        <title>Building an Arduino robot - Update</title>
-        <description>&lt;p&gt;It’s been a few months since I purchased the &lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; &lt;a href=&quot;http://www.adafruit.com/product/749&quot;&gt;Parallax robot kit&lt;/a&gt;.  It’s a mix of hardware and software with a “following the bouncing ball”tutorial on
-how to bring the robot to life.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;robot&lt;/code&gt; is simple.  It’s a three wheeled single axle chassis with “collision detectors”
-mounted on the front to help it change directions when it comes in contact with a
-stationary object.  Basically a Rumba without a vacuum, ergo value.&lt;/p&gt;
-
-&lt;p&gt;I’ve always loved robots and electronics as a kid.  Loved it even more in college
-when I had to take two years worth of electrical engineering.  However, I never
-got the opportunity to get my hands dirty physically building something electronic.  The &lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; &lt;a href=&quot;http://www.adafruit.com/product/749&quot;&gt;Parallax robot kit&lt;/a&gt; has scratched that itch.&lt;/p&gt;
-
-&lt;p&gt;I’m guessing I’m about 2/3 of the way through the initial build out, but my observations thus far&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I love the “shield” concept from Arduino&lt;/li&gt;
-  &lt;li&gt;The Parallax BOE (Board of Education) shield is awesome&lt;/li&gt;
-  &lt;li&gt;The “pseudo” &lt;a href=&quot;https://www.arduino.cc/en/Reference/HomePage&quot;&gt;C code&lt;/a&gt; from &lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt; isn’t bad, but it’s not great&lt;/li&gt;
-  &lt;li&gt;My daughters LOVE working on this robot.  They’ve named her Eve.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I look forward to wrapping this up in the next few weekends and then starting my combat drone from
-competitive racing.&lt;/p&gt;
-
-&lt;h1 id=&quot;the-progress&quot;&gt;The progress&lt;/h1&gt;
-&lt;p&gt;It’s still early in the process, but the chassis, peziohertz speaker, and the software are all functioning.&lt;br /&gt;
-The two Servo’s are calibrated and running.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/building-an-arduino-robot-update/arduino-parallax-robot-microbot.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Wed, 26 Aug 2015 16:11:51 -0500</pubDate>
-        <link>http://localhost:4000/arduino/robotics/microbot/2015/08/26/Building-an-Arduino-Robot-Update.html</link>
-        <guid isPermaLink="true">http://localhost:4000/arduino/robotics/microbot/2015/08/26/Building-an-Arduino-Robot-Update.html</guid>
-        
-        
-        <category>Arduino</category>
-        
-        <category>Robotics</category>
-        
-        <category>Microbot</category>
         
       </item>
     
