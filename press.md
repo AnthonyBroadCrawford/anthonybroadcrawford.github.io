@@ -18,6 +18,7 @@ I've been very fortunate to have been interviewed, quoted, cited, and more.  Som
 - [Launching SpotHero's mobility platform](https://venturebeat.com/2017/02/14/spothero-launches-developer-platform-to-expand-its-parking-inventory-into-third-party-apps/)
 - [Google case study on SpotHero's 20x increase in sales funnel conversion](https://static.googleusercontent.com/media/pay.google.com/en//about/business/static/data/SpotHero-GooglePay-casestudy.pdf)
 - [Google announcing the joint product launch @ CES 2018 between SpotHero & Google](https://www.blog.google/products/assistant/new-devices-more-google-assistant-ces-2018/)
+- [Google highlighting SpotHero within Google Assistant / Google Auto](https://www.blog.google/products/assistant/20-things-you-can-do-your-voice/)
 - [Yahoo announcing SpotHero app updates](https://finance.yahoo.com/news/spothero-updates-ios-app-first-130300413.html)
 - [Google & SpotHero Android Auto partnership](https://www.digitaltrends.com/cars/spothero-android-auto/)
 - [Interviewed for my 2017 marketing trends & predictions](https://www.business2community.com/marketing/future-marketing-47-experts-share-2017-predictions-01723801)
