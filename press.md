@@ -13,6 +13,7 @@ I've been very fortunate to have been interviewed, quoted, cited, and more.  Som
 
 ### SpotHero
 
+- [SpotHero named Time's a 2018 Innovative Company alongside Apple, Google, Spotify, AirBnB, & more](http://time.com/collection/genius-companies-2018/5412656/spothero/)
 - [Designing magic (as in a magical user experience)](http://chicagoventures.com/2016/11/designing-parking-magic/)
 - [Design sprints for rapid innovation](https://launchpadlab.com/blog/design-sprints-q-a-with-anthony-broad-crawford-chief-product-officer-at-spothero/)
 - [Launching SpotHero's mobility platform](https://venturebeat.com/2017/02/14/spothero-launches-developer-platform-to-expand-its-parking-inventory-into-third-party-apps/)
