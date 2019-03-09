@@ -2,7 +2,7 @@
 layout: post
 title:  "Experimenting with new habits"
 date:   2016-01-20 24:00:00
-categories: health
+categories: blog
 ---
 
 I recently took off the month of December.  It was an amazing decision that finally gave me some uninterrupted time to focused on my family and myself.  

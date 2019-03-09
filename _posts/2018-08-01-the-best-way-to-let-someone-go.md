@@ -1,9 +1,8 @@
 ---
-
 layout: post
-title: "The best way to let someone go" 
+title: "The best way to let someone go"
 date: 2018-07-30 24:00:00
-
+categories: blog
 ---
 
 _This is a cross-post from the [Water Cooler](www.thewatercooler.io) leadership forum.  A forum for technology executives to discuss the ins/outs of running fast growing/scaling companies._
@@ -12,7 +11,7 @@ Here is what I've found to be helpful at both fortune 500 & early stage companie
 
 Lastly, all of this assumes the termination is driven by performance vs. some other situational behavior that requires immediate termination (physical violence in the workplace, intimidation, intoxication, etc).  If the behavior requires instant dismisal, the below may not be the best approach.
 
-Process I follow when having to let someone go 
+Process I follow when having to let someone go
 
 - I always do it on a Friday. This gives them the weekend to cool off, process the news, etc. Also, any support group they have will most likely be available given it’s the weekend.
 

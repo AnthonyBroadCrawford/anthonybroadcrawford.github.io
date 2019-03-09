@@ -2,7 +2,7 @@
 layout: post
 title:  "Calling Rust from Ruby"
 date:   2015-08-27 21:11:51
-categories: Rust Ruby
+categories: blog
 ---
 I've falling in love with [Rust][Rust] over the last year and a half.  I like it
 for a lot of reasons, a few being the compiler, seperation of noun/verb,
