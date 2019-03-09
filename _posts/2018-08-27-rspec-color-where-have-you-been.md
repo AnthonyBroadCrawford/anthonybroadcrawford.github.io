@@ -2,6 +2,7 @@
 layout: post
 title: "RSpec color, where have you been?"
 date: 2018-08-27 24:00:00
+categories: blog
 ---
 
 I've been using [Ruby on Rails](https://www.rubyonrails.org) for a long time.  I first adopted [Ruby on Rails](https://www.rubyonrails.org) back in 2008 when the [Rails](https://www.rubyonrails.org) team released their first public version, 0.8.  I remember being blown away at the time. I had just co-founded my first company [Within3](https://www.within3.com) and realized that Microsoft technologies were not going to be a good fit for us.  We prototyped a few things in Rails and never looked back.  However, it wasn’t just Rails that blew me away, I was also blown away by the available testing frameworks.  
@@ -22,18 +23,18 @@ It’s nothing major, except that it outputs your tests execution results in a v
 
 > $ rspec —color —format doc
 
-SolidityKoans::Instructor 
-	When a course is  misconfigured 
+SolidityKoans::Instructor
+	When a course is  misconfigured
 		Should raise an ConfigurationException
-		Should log to the debug log file 
+		Should log to the debug log file
 		Should inform the user about the error on STDOUT
 
-	When a course is properly configured 
-		Should execute the Solidity tests associated with that course 
-		Should parse output for compilation errors 
-		Should parse output for test results 
+	When a course is properly configured
+		Should execute the Solidity tests associated with that course
+		Should parse output for compilation errors
+		Should parse output for test results
 		Should inform the user about any compilation errors
-		Should inform the user about any failing tests 
+		Should inform the user about any failing tests
 
 
 Finished in 0.0034 seconds (files took 0.28784 seconds to load)
