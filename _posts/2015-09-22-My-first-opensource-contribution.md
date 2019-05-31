@@ -2,7 +2,7 @@
 layout: post
 title:  "My first open source contribution"
 date:   2015-09-22 21:11:51
-categories: servo rust opensource
+categories: blog
 ---
 
 I’ve been the benefactor of open source software since college in the late 1990's.  Given I've been using open source software that long, it's actually shameful it took me until this week to contribute back to the community.  

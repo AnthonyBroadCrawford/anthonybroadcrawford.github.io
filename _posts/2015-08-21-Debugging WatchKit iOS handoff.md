@@ -2,7 +2,7 @@
 layout: post
 title:  "Debugging WatchKit iOS handoff"
 date:   2015-08-21 21:11:51
-categories: WatchKit iOS Apple Swift
+categories: blog
 ---
 
 I recently built an Apple iOS [WatchKit][WatchKit] app and part of that was improving

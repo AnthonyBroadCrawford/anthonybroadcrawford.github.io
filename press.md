@@ -4,9 +4,9 @@ title: Press
 permalink: /press/
 ---
 
-I've been very fortunate to have been interviewed, quoted, cited, and more.  Some of those articles may be found below. 
+I've been very fortunate to have been interviewed, quoted, cited, and more.  Those articles are below.
 
-### Misc 
+### Misc
 
 - [Awarded top 25 under 35 business award](http://www.americanregistry.com/recognition/top-25-under-35-movers-and-shakers/115138)
 - [Voted into OpenWeb Foundation](http://www.openwebfoundation.org/foundation )
@@ -32,11 +32,11 @@ On joining [SpotHero](http://www.spothero.com)
 
 - [Official press release for joining SpotHero as Chief Product Officer](https://www.businesswire.com/news/home/20160615005398/en/Anthony-Broad-Crawford-Joins-SpotHero-Chief-Product-Officer)
 - [Business journal commenting on my hire as Chief Product Officer](https://www.bizjournals.com/chicago/potmsearch/detail/submission/5950342/Anthony_BroadCrawford)
-- [SpotHero investor announcement my hire as Chief Product Officer](http://hydeparkangels.com/news_articles/9-biggest-chicago-tech-hires-june/) 
+- [SpotHero investor announcement my hire as Chief Product Officer](http://hydeparkangels.com/news_articles/9-biggest-chicago-tech-hires-june/)
 - [Chicago trade magazine discussing my move to SpotHero as Chief Product Officer](https://www.builtinchicago.org/2016/06/22/chicago-tech-new-hires)
 - [Business journal with a mention of my hire as Chief Product Officer](https://www.businesswire.com/news/home/20170126005605/en/SpotHero-Launches-13-New-Cities-Based-Driver)
 
-### StartupBus 
+### StartupBus
 
 - [First episode of the StartupBus reality television show](https://www.youtube.com/watch?v=8bK9LPlh9i8)
 - [TIME magazine covering StartupBus](https://www.youtube.com/watch?v=oeqTCpkGKoY)

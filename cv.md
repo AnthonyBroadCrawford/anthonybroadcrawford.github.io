@@ -4,15 +4,15 @@ title: CV
 permalink: /CV/
 ---
 
-I’m a maker and a builder who has embraced continuous learning since childhood.  My passion for learning, exploring and making, while contrasting emerging technologies and methodologies against old, has served me well in a rapidly evolving technology market. A technology market that is experiencing an unprecedented amount of growth and diversification, with no end in sight.
+I’m a maker and a builder who has embraced continuous learning since childhood.  My passion for learning, exploring and making, while contrasting emerging technologies and methodologies against old, has served me well in a rapidly evolving technology market. A technology market that is currently experiencing an unprecedented amount of growth and diversification, with no end in sight.
 
 More importantly, I've been very successful in creating organizational cultures and environments that embrace my same passion for learning.  These cultures result in more competitive technology portfolio, improved speed to market, and overall better product performance.  
 
-In addition, a culture of learning provides a haven from the drastically constrained and competitive talent landscape.  Building the infrastructure to support learning at scale not only attracts premier senior talent, but also attracts top emerging talent to become top contributors who then rapidly grow into senior leaders within the company.  
+Also, a culture of learning provides a haven from the drastically constrained and competitive talent landscape.  Building the infrastructure to support learning "at scale" not only attracts premier senior talent but also attracts top emerging talent to become top contributors who then rapidly grow into senior leaders within the company.  
 
 My passion for learning provides me a unique advantage towards building great teams, that build amazing products.
 
-Below you will find a detailed history of my work over the last fifteen years.  You can additionally find more on my [LinkedIn Profile](https://www.linkedin.com/in/anthonybroadcrawford).
+Below is a detailed history of my work over the last fifteen years.  You can additionally find more on my [LinkedIn Profile](https://www.linkedin.com/in/anthonybroadcrawford).
 
 <br/>
 
@@ -33,13 +33,13 @@ Member of the executive team, responsible for Product, Design, and Data Science.
 
 - Improved conversion across all platforms through design and product enhancements.  Android up to 22% from 2%,  iOS up to 29% from 9%, web up to 19% from 6%
 
-- Products launched received multiple industry awards for excellence from industry partners, segment partners, Google, Apple, & more 
+- Products launched received multiple industry awards for excellence from industry partners, segment partners, Google, Apple, & more
 
-- Launched HeroConnect product (developer API) that distributed SpotHero into top brands including Hertz, Apple, Google, & top automobile brands 
+- Launched HeroConnect product (developer API) that distributed SpotHero into top brands including Hertz, Apple, Google, & top automobile brands
 
 - Led complete iOS and Android app redesign, resulted in increased conversion, decreased call center volume, and consideration for design awards from Apple & Google
 
-- Partnered with Apple & Google to release cutting edge product enhancements debuting on stage at Apple WWDC & Google I/O events with hundreds of follow on promotional events resulting in hundreds of thousands of incremental app downloads 
+- Partnered with Apple & Google to release cutting edge product enhancements debuting on stage at Apple WWDC & Google I/O events with hundreds of follow on promotional events resulting in hundreds of thousands of incremental app downloads
 
 - Delivered several segment focused product launches in for Airport, Monthly, & Event parking users.  Project was delivered early, under budget, and exceeded plan for incremental revenue contribution ahead of schedule
 
