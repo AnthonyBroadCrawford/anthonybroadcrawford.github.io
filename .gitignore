@@ -3,4 +3,5 @@ _site
 
 # Jekyll files to ignore 
 .sass-cache
-.jekyll-metadata 
+.jekyll-metadata
+.jekyll-cache
