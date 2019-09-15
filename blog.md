@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: page
+title: Blog
+permalink: /Blog/
 ---
 <div class="home">
-
-  <h1 class="page-heading">&nbsp;</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -17,3 +17,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
