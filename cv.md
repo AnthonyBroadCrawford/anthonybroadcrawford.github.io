@@ -16,7 +16,11 @@ Below is a detailed history of my work over the last fifteen years.  You can add
 
 <br/>
 
-# Chief Product Officer, SpotHero, December 2015 - Present
+# Chief Executive Officer, abc & company, February 2019 - Present
+Founder and lead executive.  Responsible for all aspects of the business.  
+
+
+# Chief Product Officer, SpotHero, December 2015 - February 2019
 Member of the executive team, responsible for Product, Design, and Data Science.
 
 - Established company vision & 3 year product roadmap transitioning SpotHero to automobile & autonomous vehicle vertical, delivered early and under budget
