@@ -12,8 +12,13 @@ When it came to the robot, Ivy was incredibly specific. She wanted to build a ro
 
 I started on [AdaFruit](http://www.adafruit.com) as a year ago, my other daughter, Phoenix, and I built a simple [Arduino](http://www.arduino.cc) robot together. [AdaFruit](http://www.adafruit.com) unfortunately didn’t have an [Arduino](http://www.arduino.cc) Hexapod.   So I scavenged this [HexaPod](http://www.google.com) kit on Google. 
 
-[INSERT IMAGE]
+![Hexapod](/assets/images/Hexapod/hexapod.jpg)
 
 Ivy and I are sitting down once a week to work through the build of our Hexapod (spider) and in our fist week constructed the Hexapods first leg (or half of one).  We both had a blast.  
 
+![Ivy with the finished product](/assets/images/Hexapod/ivy-willow-hexapod-leg.jpg)
+
+![Completed Hexapod leg](/assets/images/Hexapod/completed-hexapod-leg.jpg)
+
 I’ll continue to update as we progress.   However, so far, so good!
+
