@@ -16,8 +16,24 @@ Below is a detailed history of my work over the last seventeen years.  You can a
 
 <br/>
 
-# Chief Executive Officer, abc & company, February 2019 - Present
-Founder and lead executive.  Responsible for all aspects of the business.  
+# Chief Executive Officer, YachtClub, October 2019 - Present
+A groundbreaking software platform making marina management, and the boating experience absolutely delightful.
+
+- Launching to our first customers in March :)
+
+
+# Executive Board Member, Wilmette Yacht Club, February 2020 - Present
+Chicago's premier yacht club located within Chicago's North Shore.
+
+
+# Founder, abc & company, February 2019 - Present
+Founder and lead executive for a CTO/CPO executive consultancy.  Clients include 
+
+- Hyatt Hotels 
+- The Ounce of PRevention
+- SpotHero 
+- GigSmart 
+- Sponge Ideas 
 
 
 # Chief Product Officer, SpotHero, December 2015 - February 2019
@@ -146,3 +162,4 @@ BS in Computer Science, Technology and Society.  [Bowling Green State University
 
 - [Dataportability.org](http://dataportability.org/)
 - [Startup Weekend, Cleveland](http://cleveland.startupweekend.org/)
+- [Wilmette YachtClub](http://https://wilmetteharbor.org)
