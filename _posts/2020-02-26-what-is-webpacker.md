@@ -10,7 +10,7 @@ The obvious question is, "why am I using it?" however, I didn't choose the Webpa
 
 For example, a vanilla implementation of a new Rails6 project won't work on Heroku continuous integration services, and you need a lot of mucking around to make Webpacker work.  Even worse, there is almost no documentation on this, and my StackOverflow compatriots have struggled too.  This experience is the opposite of what you expect from Rails and Heroku.  Both are famous for merely just working.  
 
-In the broader sense, I'm not exactly sure what problem it is solving for Rails write large.  How it is better than the previous solution, and what I should be taking advantage of?  Why is this not clearer?
+In the broader sense, I'm not exactly sure what problem it is solving for Rails write large.  How it is better than the previous solution, and what should I be taking advantage of?  Why is this not clearer?
 
 Are most modern-day websites that heavy on client-side implementation (React, Ember, et al.)?  Or am I only missing a fundamental use-case for a Bootstrap and JQuery website Rails app?
 
