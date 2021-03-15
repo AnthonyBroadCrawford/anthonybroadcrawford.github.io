@@ -17,7 +17,7 @@ I've been very fortunate to have been interviewed, quoted, cited, and more.  Tho
 - [Designing magic (as in a magical user experience)](http://chicagoventures.com/2016/11/designing-parking-magic/)
 - [Design sprints for rapid innovation](https://launchpadlab.com/blog/design-sprints-q-a-with-anthony-broad-crawford-chief-product-officer-at-spothero/)
 - [Launching SpotHero's mobility platform](https://venturebeat.com/2017/02/14/spothero-launches-developer-platform-to-expand-its-parking-inventory-into-third-party-apps/)
-- [Google case study on SpotHero's 20x increase in sales funnel conversion](https://static.googleusercontent.com/media/pay.google.com/en//about/business/static/data/SpotHero-GooglePay-casestudy.pdf)
+- [Google case study on SpotHero's 20x increase in sales funnel conversion](https://static.googleusercontent.com/media/pay.google.com/en//about/business/static/data/spothero-gpay-casestudy.pdf)
 - [Google announcing the joint product launch @ CES 2018 between SpotHero & Google](https://www.blog.google/products/assistant/new-devices-more-google-assistant-ces-2018/)
 - [Google highlighting SpotHero within Google Assistant / Google Auto](https://www.blog.google/products/assistant/20-things-you-can-do-your-voice/)
 - [Yahoo announcing SpotHero app updates](https://finance.yahoo.com/news/spothero-updates-ios-app-first-130300413.html)
